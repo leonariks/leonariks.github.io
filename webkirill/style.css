@@ -389,9 +389,7 @@ p {
 
     background: linear-gradient(to bottom, #f38181, #fce38a);
 
-    transition: transform .2s linear;
-
-    
+    transition: transform .2s linear;    
 }
 
 .pictures__img img {
@@ -644,9 +642,7 @@ p {
 
     .pictures__item {
 
-        width: 100%;
         max-width: 410px;
-        margin-bottom: 20px;
     }
 
     .pictures__item:last-child {
