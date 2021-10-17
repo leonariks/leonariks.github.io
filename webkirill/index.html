@@ -4,13 +4,131 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="https://kit.fontawesome.com/989af0ce81.js" crossorigin="anonymous"></script>
     <title>Portfolio</title>
 </head>
 <body>
 
-<header class="header">
+<div class="page">  
 
+     <!-- Header -->
+<header class="header">
+    <div class="container">
+        <div class="header__inner">
+            <div class="header__logo" data-scroll="#intro">Web</div>
+
+            <nav class="nav" id="nav">
+                <a class="nav__link" href="#" data-scroll="#projects">Projects</a>
+                <a class="nav__link"  href="#" data-scroll="#services">Service</a>
+                <a class="nav__link"  href="#" data-scroll="#contact">Contact</a>
+            </nav>
+
+            <button class="nav-toggle" id="nav_toggle" type="button">
+                <span class="nav-toggle__item">Menu</span>
+            </button>
+
+        </div><!-- header__inner -->
+    </div><!-- container -->
 </header>
+
+<!-- intro
+    =========================================== -->
+
+    <div class="intro" id="intro">
+        <div class="container">
+
+            <div class="intro__inner">
+                <h2 class="intro__suptitle">My Page</h2>
+                <h1 class="intro__title">Welcome
+                to my Profile</h1>
+            </div><!-- intro__inner -->
+        </div><!-- Container -->                
+    </div><!-- Intro -->   
+
+
+    <!-- About
+    ========================================== -->
+
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">
+                    Layout
+                </h2>
+                <h3 class="section__subtitle"> Here you can see my projects. </h3>
+            </div><!-- section__header -->
+
+            <div class="pictures">
+
+                <a href="https://leonariks.github.io/activebox/" target="_blank" class="pictures__item">
+                    <div class="picture__inner">
+                        <div class="pictures__img">
+                            <img src="img/Activebox.png" alt="" >
+                            <div class="pictures__text">Activebox</div>
+                        </div><!-- pictures__img -->
+                    </div><!-- picture__inner -->
+                </a><!-- pictures__item -->
+
+                <a href="https://leonariks.github.io/MoGo/" target="_blank" class="pictures__item">
+                    <div class="picture__inner">
+                        <div class="pictures__img">
+                            <img src="img/MoGo.png" alt="">
+                            <div class="pictures__text">MoGo</div>
+                        </div><!-- pictures__img -->
+                    </div><!-- picture__inner -->
+                </a><!-- pictures__item -->
+
+            </div><!-- pictures -->
+        </div><!-- container -->
+    </section><!-- section -->
+
+
+<!-- Team -->
+<section class="section section--me">
+    <div class="container">
+        <div class="section__header">
+            <h2 class="section__title">
+                My Contact</h2> 
+                         
+        </div><!-- section__header -->
+
+        <div class="pictures">
+
+            <div class="pictures__item">
+                <div class="picture__inner">
+                    <div class="pictures__img">
+                        <img src="img/Me.jpg" alt="" height="500" width="250">
+                        <div class="pictures__text">
+                            <div class="social">
+                                <a class="social__item" href="https://vk.com/id285236843" target="_blank">
+                                    <i class="fab fa-vk"></i>
+                                </a>
+                                <a class="social__item" href="https://t.me/leonariks" target="_blank">
+                                    <i class="fab fa-telegram-plane"></i>
+                                </a>
+                                <a class="social__item" href="https://www.instagram.com/leonariks/?utm_medium=copy_link" target="_blank">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </div><!-- social -->
+                        </div><!-- pictures__text -->
+                    </div><!-- pictures__img -->
+                </div><!-- picture__inner -->
+
+                <div class="picture__info">
+                    <div class="picture__name">Kirill Seliutin</div>
+                    <div class="picture__prof">Web Developer</div>
+                </div>
+
+            </div><!-- pictures__item -->
+
+        </div><!-- pictures -->
+
+    </div><!-- container -->
+</section>
+
+
+</div>  
 
 </body>
 </html>
