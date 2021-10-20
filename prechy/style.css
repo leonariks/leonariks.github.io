@@ -21,6 +21,12 @@ h1,h2,h3,h4,h5,h6 {
     margin: 0;
 }
 
+hr {
+
+    color: #808080;
+    opacity: .5;
+}
+
 p {
 
     margin: 0;
@@ -90,10 +96,10 @@ p {
 
 .nav__link {
 
-    color: #6c6c6c;
+    color: #808080;
     text-decoration: none;
     padding-right: 30px;
-    opacity: .6;
+    opacity: .7;
     transition: opacity .2s linear;
 }
 
@@ -199,16 +205,112 @@ p {
 
 .services {
 
+    margin-top: 70px;
+}
+
+
+.services__inner {
+
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
-    margin-top: 70px;
 }
 
 
 .services__item {
 
     width: 33.33333%;
-    justify-content: center;
     text-align: center;
+    padding: 0 30px;
+}
+
+.services__title {
+
+    font-size: 20px;
+    font-weight: 400;
+    color: #5094f2;
+    padding-top: 20px;
+}
+
+.services__suptitle {
+
+    font-size: 14px;
+    font-weight: 400;
+    color: #808080;
+}
+
+
+
+/* Contact
+================================== */
+
+
+.contact {
+
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.contact__inner {
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact__item {
+
+    width: 50%;
+}
+
+.contact__title {
+
+    text-align: center;
+    font-size: 42px;
+    font-weight: 400;
+    color: #333333;
+
+    padding-bottom: 50px;
+}
+
+.contact__img {
+
+    text-align: center;
+}
+
+
+.contact__suptitle {
+
+    font-size: 26px;
+    font-weight: 400;
+    color: #333333;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+.contact__txt {
+
+    font-size: 14px;
+    font-weight: 400;
+    color: #808080;
+    line-height: 2.5;
+}
+
+/* Footer
+==================================== */
+
+.footer {
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.footer__inner {
+
+    text-align: center;
+}
+
+.footer__txt {
+
+    font-size: 15px;
+    font-weight: 400;
+    color: #909090;
 }
