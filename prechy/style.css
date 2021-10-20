@@ -191,3 +191,24 @@ p {
 
     background-color: #4784d8;
 }
+
+
+
+/* Services
+======================================== */
+
+.services {
+
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 70px;
+}
+
+
+.services__item {
+
+    width: 33.33333%;
+    justify-content: center;
+    text-align: center;
+}
