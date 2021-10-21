@@ -61,6 +61,7 @@ p {
     z-index: 1000;
 }
 
+
 .header__inner {
 
     display: flex;
@@ -96,7 +97,7 @@ p {
 
 .nav__link {
 
-    color: #808080;
+    color: #333;
     text-decoration: none;
     padding-right: 30px;
     opacity: .7;
@@ -244,24 +245,24 @@ p {
 ================================== */
 
 
-.contact {
+.cart {
 
     margin-top: 100px;
     margin-bottom: 50px;
 }
 
-.contact__inner {
+.cart__inner {
 
     display: flex;
     flex-wrap: wrap;
 }
 
-.contact__item {
+.cart__item {
 
     width: 50%;
 }
 
-.contact__title {
+.cart__title {
 
     text-align: center;
     font-size: 42px;
@@ -271,13 +272,13 @@ p {
     padding-bottom: 50px;
 }
 
-.contact__img {
+.cart__img {
 
     text-align: center;
 }
 
 
-.contact__suptitle {
+.cart__suptitle {
 
     font-size: 26px;
     font-weight: 400;
@@ -286,7 +287,7 @@ p {
     margin-bottom: 20px;
 }
 
-.contact__txt {
+.cart__txt {
 
     font-size: 14px;
     font-weight: 400;
@@ -313,4 +314,54 @@ p {
     font-size: 15px;
     font-weight: 400;
     color: #909090;
+}
+
+/* Burger
+=============================== */
+
+.burger {
+
+    display: none;
+
+    padding: 9px 2px;
+    background: none;
+    border: 0;
+    cursor: pointer;
+}
+
+.burger__item {
+    display: block;
+
+    width: 30px;
+    height: 3px;
+
+    background-color: #fff;
+    font-size: 0;
+    color: transparent;
+
+    position: relative;
+}
+
+.burger__item::before,
+.burger__item::after {
+
+    content: "";
+
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+
+    position: absolute;
+    left: 0;
+    z-index: 1;
+}
+
+.burger__item::before {
+
+    top: -8px;
+}
+
+.burger__item::after {
+
+    bottom: -8px;
 }
