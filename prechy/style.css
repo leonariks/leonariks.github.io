@@ -27,10 +27,7 @@ hr {
     opacity: .5;
 }
 
-p {
 
-    margin: 0;
-}
 
 /* Container
 ===================================== */
@@ -104,11 +101,6 @@ p {
     transition: opacity .2s linear;
 }
 
-.nav__link:last-child {
-
-    padding-right: 0;
-} 
-
 .nav__link:hover {
 
     opacity: 1;
@@ -141,6 +133,8 @@ p {
 
 
 .intro__img {
+
+    display: block;
 
     min-width: 100%;
     top: 50%;
@@ -224,6 +218,12 @@ p {
     padding: 0 30px;
 }
 
+.services__img {
+
+    width: 186px;
+    height: 186px;
+}
+
 .services__title {
 
     font-size: 20px;
@@ -277,6 +277,11 @@ p {
     text-align: center;
 }
 
+.cart__photo {
+
+    width: 370px;
+    height: 280px;
+}
 
 .cart__suptitle {
 
@@ -335,7 +340,7 @@ p {
     width: 30px;
     height: 3px;
 
-    background-color: #fff;
+    background-color: #000;
     font-size: 0;
     color: transparent;
 
@@ -349,7 +354,7 @@ p {
 
     width: 100%;
     height: 100%;
-    background-color: #fff;
+    background-color: #000;
 
     position: absolute;
     left: 0;
@@ -364,4 +369,116 @@ p {
 .burger__item::after {
 
     bottom: -8px;
+}
+
+
+@media (max-width:900px) {
+
+    .cart__item {
+
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+@media (max-width:820px) {
+
+
+     /* Nav */
+     .nav {
+
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        text-align: right;
+
+        background-color: #ebbb11;
+
+        position: absolute;
+        top: 100%;
+        right: 0;
+
+
+    }
+
+    /* Intro */
+
+    .intro__img {
+
+        display: none;
+    }
+
+    .intro__txt {
+
+        position: static;
+    }
+
+    /* Service */
+    
+    .services__item {
+
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    /* Cart */
+
+    .cart {
+
+        margin-top: 70px;
+        margin-bottom: 30px;
+    }
+
+    /* Burger */
+
+    .burger {
+
+        display: block;
+    }
+}
+
+
+@media (max-width:520px) {
+
+    /* Intro */
+
+    .intro__title {
+
+        font-size: 30px;
+    }
+
+
+    /* Services */
+
+    .services__img {
+
+        width: 120px;
+        height: 120px;
+    }
+
+    /* Cart */
+
+    .cart {
+
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+
+    .cart__title {
+
+        font-size: 30px;
+    }
+
+    .cart__photo {
+
+        width: 270px;
+        height: 180px;
+    }
+
+    .cart__txt {
+
+        line-height: 1.5;
+    }
+    
 }
