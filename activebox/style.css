@@ -87,6 +87,7 @@ p{
     }
     
     .nav__link{
+        
         margin-left: 50px;
         color: #fff;
         text-decoration: none;
@@ -265,9 +266,9 @@ p{
 ==========================*/
 
 .works {
-display: flex;
-flex-wrap: wrap;
 
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .works__item {
