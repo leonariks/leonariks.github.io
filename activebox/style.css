@@ -113,7 +113,7 @@ p{
         flex-direction: column;
         justify-content: center;
     
-        height: 750px;
+        height: 100vh;
         padding-top: 100px;
 
         background: #30344e url("img/intro-bg.jpg") center no-repeat ;
