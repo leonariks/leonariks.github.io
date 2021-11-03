@@ -121,6 +121,13 @@ hr {
     background: url(img/bg.jpg)
     center no-repeat;
     background-size: cover;
+
+    position: relative;
+}
+
+.intro.slick-slider {
+
+    padding: 0 110px;
 }
 
 .intro__inner {
@@ -167,6 +174,60 @@ hr {
     font-weight: 400;
     color: #fff;
     margin-bottom: 20px;
+}
+
+
+.intro .slick-slider {
+
+    padding: 0 110px;
+}
+
+
+.slick-arrow {
+
+    display: block;
+
+    font-size: 0;
+    color: transparent;
+
+    border: 0;
+    background: none;
+    cursor: pointer;
+
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    transform: translateY(-50%);
+}
+
+.slick-arrow:focus {
+
+    outline: 0;
+}
+
+.slick-arrow::after {
+
+    content: "";
+    display: block;
+    width: 18px;
+    height: 18px;
+
+    border-top: 2px solid #ccc;
+    border-left: 2px solid #ccc;
+
+    transform: rotate(45deg);
+}
+
+.slick-prev {
+
+    left: 0;
+    transform: rotate(-90deg);
+}
+
+.slick-next {
+
+    right: 0;
+    transform: rotate(90deg);
 }
 
 
