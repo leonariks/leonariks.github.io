@@ -177,4 +177,90 @@ table {
 		background-color: #dc4041;
 		color: #fff;
 	}
+
+	.btn--red {
+
+		background-color: #e84545;
+		padding: 15px 55px;		
+	}
 	
+			
+	.btn--red:hover {
+		background-color: #cc3a3a;
+	}
+	
+	
+
+	/* Intro
+	================================= */
+
+	.intro {
+
+		width: 100%;
+		height: 500px;
+		
+		background: url(img/intro/bgcover.png)right/auto no-repeat ,url(img/intro/background.jpg) 50%/cover no-repeat;
+	}
+
+	.intro__inner {
+
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+
+	.intro__item {
+
+		padding: 100px 15px 0;
+		color: #fff;
+	}
+
+	.intro__item--first {
+
+		text-align: left;
+
+		width: 39%;
+	}
+
+	.intro__item--second {
+
+		width: 59%;
+	}
+
+	.intro__title {
+
+		font-size: 50px;
+		font-weight: 700;
+		text-transform: uppercase;
+		text-shadow: 2px 2px 2px #0d0d0d;
+	}
+
+	.intro__item a {
+
+		margin-top: 40px;
+	}
+
+
+	.intro__markers a {
+
+		text-decoration: none;
+		color: #fff;
+		padding-left: 5px;
+
+		opacity: 0.7;
+		transition: opacity .2s linear;
+	}
+
+	.intro__markers a:hover {
+
+		opacity: 1;
+	}
+
+	.intro__markers {
+
+		margin-top: 40px;
+		font-size: 19px;
+		font-weight: 300;	
+	}
+
