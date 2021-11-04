@@ -186,10 +186,6 @@ p{
     }
 
 
-
-
-
-
 .btn--red {
 
     background-color: #e84545;
@@ -661,10 +657,7 @@ p{
 
 .footer {
 
-    
-
     background-color: #3a3e64;
-
 }
 
 
@@ -675,17 +668,13 @@ p{
     padding: 70px 0;
     display: flex;
     flex-wrap: wrap;
-
 }
 
 .footer__block {
 
     width: 33.33333%;
-
     text-align: center;
-
     padding: 15px;
-
 }
 
 
@@ -705,7 +694,6 @@ p{
     line-height: 1.5;
     font-style: normal;
     color: rgba(255, 255, 255, 0.5);
-
 }
 
 
