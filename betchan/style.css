@@ -92,7 +92,17 @@ table {
 	.header__logo img {
 
 		max-width: 100%;
+
+		opacity: .7;
+		transition: opacity .2s linear;
 	}
+
+
+	.header__logo img:hover {
+
+		opacity: 1;
+	}
+
 
 	.header__bonuses a {
 
@@ -161,7 +171,7 @@ table {
 		vertical-align: top;
 		padding: 10px 15px;
 	
-		border: 1px solid #dc4041;
+		border: 1px solid rgb(134, 184, 124);
 		border-radius: 20px;
 	
 		font-size: 18px;
@@ -174,19 +184,20 @@ table {
 	
 	.btn:hover {
 	
-		background-color: #dc4041;
+		background-color: rgb(134, 184, 124);
 		color: #fff;
 	}
 
 	.btn--red {
 
 		background-color: #e84545;
+		border: 0;
 		padding: 15px 55px;		
 	}
 	
 			
 	.btn--red:hover {
-		background-color: #cc3a3a;
+		background-color: #b13131;
 	}
 	
 	
@@ -196,45 +207,55 @@ table {
 
 	.intro {
 
-		width: 100%;
-		height: 500px;
-		
-		background: url(img/intro/bgcover.png)right/auto no-repeat ,url(img/intro/background.jpg) 50%/cover no-repeat;
-	}
-
-	.intro__inner {
-
 		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-between;
+        flex-direction: column;
+        justify-content: center;
+		height: 100vh;
+		
+		background:url(img/intro/background.jpg) 50%/ cover no-repeat ;
+		background-attachment: fixed;	
 	}
+
 
 
 	.intro__item {
 
-		padding: 100px 15px 0;
 		color: #fff;
+		margin: 0 auto;
+		text-align: center;
 	}
 
-	.intro__item--first {
-
-		text-align: left;
-
-		width: 39%;
-	}
-
-	.intro__item--second {
-
-		width: 59%;
-	}
 
 	.intro__title {
 
-		font-size: 50px;
+		font-size: 90px;
 		font-weight: 700;
 		text-transform: uppercase;
 		text-shadow: 2px 2px 2px #0d0d0d;
+
+		cursor: pointer;
+		opacity: .7;
+		transition: opacity .2s linear;
 	}
+
+
+	.intro__title:hover {
+
+		opacity: 1;
+	}
+
+	.intro__item .btn--red {
+
+		background-color: rgb(134, 184, 124);
+		border-color: rgb(134, 184, 124);
+		color: #380b4f;
+	}
+
+	.intro__item .btn--red:hover {
+
+		background-color: rgb(108, 146, 100);
+	}
+
 
 	.intro__item a {
 
@@ -246,10 +267,15 @@ table {
 
 		text-decoration: none;
 		color: #fff;
-		padding-left: 5px;
+		padding-left: 10px;
 
 		opacity: 0.7;
 		transition: opacity .2s linear;
+	}
+
+	.intro__markers a:first-child {
+
+		padding-left: 0;
 	}
 
 	.intro__markers a:hover {
@@ -260,7 +286,199 @@ table {
 	.intro__markers {
 
 		margin-top: 40px;
+		margin-left: 20px;
 		font-size: 19px;
 		font-weight: 300;	
+	}
+
+
+	.intro__txt {
+
+		font-size: 18px;
+		font-weight: 400;
+		max-width: 700px;
+		margin: 100px auto 0;
+
+		opacity: .7;
+		transition: opacity .2s linear;
+		cursor: pointer;
+	}
+
+	.intro__txt:hover {
+
+		opacity: 1;
+	}
+
+
+	/* Section
+	=========================================== */
+
+	.section {
+
+		width: 100%;
+
+		background-color: #121212;
+	}
+
+	.section--first {
+
+		background-color: #121212;
+	}
+
+	.section--second {
+
+		background-color:#0c0c0c;
+	}
+
+	.section--third {
+
+		background-color:#121212;
+	}
+
+
+	.section__inner {
+
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	.section__item {
+
+		color: #fff;
+	}
+
+	.section__item--first {
+
+		width: 50%;
+	}
+
+	.section__item--second {
+
+		width: 50%;
+		position: relative;
+		
+	}
+
+	.section__title {
+
+		font-size: 50px;
+		font-weight: 500;
+		padding: 40px 0;
+	}
+
+	.section__txt {
+
+		font-size: 18px;
+		font-weight: 400;
+		padding-bottom: 40px;
+	}
+
+	.section__item a {
+
+		margin-bottom: 40px;
+	}
+
+	.section__item img {
+
+		position: absolute;
+		bottom: 0;
+		right: 100px;
+
+		opacity: .7;
+		transition: opacity .2s linear;
+	}
+
+	.section__item img:hover {
+
+		opacity: 1;
+	}
+
+
+
+
+	/* Questions
+	====================================== */
+
+	.questions {
+
+		background-color: #0c0c0c;
+		padding-top: 50px;
+	}
+
+	.questions__txt {
+
+		font-size: 50px;
+		font-weight: 700;
+		color: #fff;
+		padding-bottom: 20px;
+	}
+
+
+
+	/* Accordion
+	=============================== */
+
+
+	.accordion__item {
+
+		border: 2px solid #404040;
+	}
+
+	.accordion__item.active 
+	.accordion__content {
+		display: block;
+	}
+
+	.accordion__item.active
+	.accordion__header {
+
+		border-bottom-color:#e5e5e5;
+	} 
+
+
+	.accordion__item.active {
+
+	}
+
+
+
+
+	.accordion__header {
+
+		padding: 10px;
+		border-bottom: 1px solid transparent;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		cursor: pointer;
+	}
+
+
+	.accordion__title {
+
+		font-size: 20px;
+		font-weight: 700;
+		color: #fff;
+		text-transform: uppercase;
+	}
+
+
+	.accordion__show {
+
+		
+	}
+
+
+	.accordion__content {
+
+		padding: 15px 20px;
+		display: none;
+
+		font-size: 15px;
+		color: #999999;
+		font-style: italic;
+		font-weight: 300;
 	}
 
