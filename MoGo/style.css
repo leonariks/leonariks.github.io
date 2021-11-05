@@ -224,14 +224,14 @@ hr {
 
 .nav-toggle.active .nav-toggle__item::after {
 
-    transform-origin: left bottom;
-    transform: rotate(45deg) translate3d(0, -3px, 0);
+    transform: rotate(45deg);
+	top: 9px;
 }
 
 .nav-toggle.active .nav-toggle__item::before {
 
-    transform-origin: left top;
-    transform: rotate(-45deg) translate3d(0, 3px, 0);
+    transform: rotate(-45deg);
+	bottom: 9px;
 }
 
 
