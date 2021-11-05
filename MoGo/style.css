@@ -276,7 +276,8 @@ hr {
 
     background: url(img/intro-bg.jpg)
     center no-repeat;
-    background-size: cover;   
+    background-size: cover;  
+    background-attachment: fixed; 
 }
 
 .intro__inner {
