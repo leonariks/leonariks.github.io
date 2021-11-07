@@ -367,7 +367,9 @@ p {
 
     position: relative;
     background-color: #95e1d3;
+    border-radius: 10px;
 }
+
 
 
 .pictures__item:hover .pictures__img {
@@ -390,6 +392,9 @@ p {
     background: linear-gradient(to bottom, #f38181, #fce38a);
 
     transition: transform .2s linear;    
+    border-radius: 10px;
+
+
 }
 
 .pictures__img img {
@@ -398,8 +403,7 @@ p {
     max-width: 100%;
     height: auto;
     transition: opacity .2s linear;
-    /* height: 150px;
-    width: 250px; */
+    border-radius: 10px;
 }
 
 .pictures__text {
