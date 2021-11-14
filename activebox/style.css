@@ -123,14 +123,15 @@ p{
 
 
     .intro__inner {
+
         width: 100%;
         max-width: 970px;
         margin: 0 auto;
         text-align: center;
-
     }
 
     .intro__title {
+
         margin: 0 0 30px;
 
         font-family:'Open Sans', sans-serif ;
@@ -139,7 +140,6 @@ p{
         color: #fff;
         font-weight: bold;
         text-transform: uppercase;
-    
     }
 
 
