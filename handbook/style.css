@@ -162,36 +162,45 @@ table {
         margin-top: 100px;
     }
 
-
-    .intro__item {
-
-        width: 50%;
-    }
-
    .intro__pdf {
 
         height: 700px;
         width: 450px;
    }
 
-   .intro__txt {
+ 
 
-        font-size: 35px;
-        font-weight: 500;
-        color: #fff;
+   /* VZK
+   ==================================================== */
 
-        border: 2px #fff solid;
-        padding: 10px 20px;
-        background-color: #333;
-        border-radius: 5px;
+   .section {
 
-        opacity: .7;
-        transition: opacity .2s linear, transform .2s linear;
-        cursor: pointer;
+        padding-top: 100px;
+
    }
 
-   .intro__txt:hover {
+   .section__header {
 
-        opacity: 1;
-        transform: translate3d(-2px,-2px,0);
-   }
+        text-align: center;
+        width: 100%;
+        max-width: 950px;
+        margin: 0 auto 80px;
+    }   
+
+    .section__title {
+
+        font-size: 36px;
+        font-weight: 700;
+        color: rgb(0, 0, 0);
+        margin-bottom: 10px;
+    }
+
+    .section__title::after {
+
+        content: "";
+        display: block;
+        width: 60px;
+        height: 3px;
+        background-color: #f38181;
+        margin: 30px auto 60px;
+    }
