@@ -204,3 +204,43 @@ table {
         margin: 30px auto 60px;
     }
 
+
+    /* VZK
+    =============================================== */
+
+    .vzk {
+
+        display: flex;
+        background-color: #4b5280;
+        padding: 20px 20px;
+        border-radius: 10px;
+    }
+
+    .vzk__item {
+
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .vzk__item a {
+
+        text-decoration: none;
+        color: #fff;
+        margin: 10px;
+
+        font-size: 14px;
+        font-weight: 500;
+        border: 2px #fff solid;
+        border-radius: 3px;
+        padding: 8px 10px;
+        
+        transition: transform .2s linear, background-color .2s linear;
+    }
+
+    .vzk__item a:hover {
+
+        transform: translate3d(-2px,-2px,0);
+        background-color: #333;
+    }
