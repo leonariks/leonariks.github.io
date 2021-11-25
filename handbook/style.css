@@ -175,7 +175,11 @@ table {
    .section {
 
         padding-top: 100px;
+   }
 
+   .section--last {
+
+        margin-bottom: 30px;
    }
 
    .section__header {
@@ -183,16 +187,28 @@ table {
         text-align: center;
         width: 100%;
         max-width: 950px;
-        margin: 0 auto 80px;
-    }   
+        margin: 0 auto 40px;
+    }  
+
+    .section__title a {
+
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        opacity: .7;
+        transition: opacity .2s linear;
+    }
+    .section__title a:hover {
+
+        opacity: 1;
+    }
 
     .section__title {
 
         font-size: 36px;
         font-weight: 700;
-        color: rgb(0, 0, 0);
         margin-bottom: 10px;
     }
+
 
     .section__title::after {
 
@@ -201,30 +217,31 @@ table {
         width: 60px;
         height: 3px;
         background-color: #f38181;
-        margin: 30px auto 60px;
+        margin: 30px auto 30px;
     }
 
 
     /* VZK
     =============================================== */
 
-    .vzk {
+    .block {
 
         display: flex;
+        justify-content: center;
+        align-items: center;
         background-color: #4b5280;
         padding: 20px 20px;
         border-radius: 10px;
     }
 
-    .vzk__item {
+    .block__item {
 
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       flex-wrap: wrap;
-      align-items: center;
     }
 
-    .vzk__item a {
+    .block__item a {
 
         text-decoration: none;
         color: #fff;
@@ -239,7 +256,7 @@ table {
         transition: transform .2s linear, background-color .2s linear;
     }
 
-    .vzk__item a:hover {
+    .block__item a:hover {
 
         transform: translate3d(-2px,-2px,0);
         background-color: #333;
