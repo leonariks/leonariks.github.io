@@ -1,0 +1,193 @@
+body {
+	
+	font-family: Arial;
+	font-size: 16px;
+	background-color: pink;
+}
+
+.men {
+	
+	display:flex;
+	justify-content: center;
+	margin: 0 auto;
+	
+}
+
+h1{
+	
+	text-align: center;
+	color: white;
+	font-weight: 900;
+}
+
+.navigation {
+	
+	height: 50px;
+}
+
+.navigation li:nth-child(1) {
+	
+	border: 1px solid #9305a8;
+	background: #8a07db;	
+}
+
+.navigation li:nth-child(1):hover{
+	
+	background: #6c03ad;
+}
+
+.navigation li:nth-child(2) {
+	
+	border: 1px solid #065bbd;
+	background: blue;	
+}
+
+.navigation li:nth-child(2):hover{
+	
+	background: #0f338c;
+}
+
+
+.navigation li:nth-child(3) {
+	
+	border: 1px solid red;
+	background: red;	
+}
+
+.navigation li:nth-child(3):hover{
+	
+	background: #c20814;
+}
+
+.navigation li:nth-child(4) {
+	
+	border: 1px solid #9acc12;
+	background: #88d907;	
+}
+
+.navigation li:nth-child(4):hover{
+	
+	background: #8bba0b;
+}
+
+.navigation li:nth-child(5) {
+	
+	border: 1px solid orange;
+	background: orange;	
+}
+
+.navigation li:nth-child(5):hover{
+	
+	background: #c96e06;
+}
+
+
+.navigation li {
+	
+	height: auto;
+	width: 200px;
+	float: left;
+	border-radius: 5px;
+	text-align: center;
+	list-style: none;
+	margin-left: 10px;
+	margin-bottom: 15px;
+	transition: 0.5s;
+}
+
+.navigation li a{
+	
+	font-size: 20px;
+	color: white;
+	text-decoration: none;
+	font-weight: 600;
+	padding: 15px;
+	display: block;
+}
+
+
+img {
+	
+	width: 190px;
+	height: 190px;
+	border-radius: 5px;	
+}
+
+.markets {
+	
+	margin-top: 150px;
+}
+
+.grid {
+	
+	margin-top: 20px;
+	display: grid;
+	gap: 10px;
+	grid-template-columns: 1fr;
+	grid-template-rows: 200px;
+	text-align: center;
+	
+}
+
+
+.grid *{
+	
+	overflow: auto;
+}
+
+.grid .Wildberries{
+	
+	background-color: #9305a8;
+}
+
+.Wildberries{
+	
+	padding: 5px;
+}
+
+
+.Ozon {
+	
+	padding: 5px;
+}
+
+.grid .Ozon{
+	
+	background-color: #065bbd;
+	overflow: auto;
+}
+
+
+.Lamoda {
+	
+	padding: 5px;
+}
+
+.grid .Lamoda{
+	
+	background-color: red;
+	overflow: auto;
+}
+
+.GoldApple {
+	
+	padding: 5px;
+}
+
+.grid .GoldApple{
+	
+	background-color: #9acc12;
+	overflow: auto;
+}
+
+
+.Yandex {
+	
+	padding: 5px;
+}
+
+.grid .Yandex{
+	
+	background-color: orange;
+	overflow: auto;
+}
