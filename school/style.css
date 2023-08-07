@@ -233,3 +233,7 @@ li .text__l{
 .contact a:hover{
   color: #eb4c00;
 }
+
+.icon{
+  width: 80px;
+}
