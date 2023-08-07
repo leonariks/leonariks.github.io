@@ -1,0 +1,235 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+html {
+    height: 100%;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+p{
+  text-indent: 40px;
+}
+
+@font-face {
+	
+	font-family: Felidae;
+	src: url(../fonts/Felidae.ttf);
+}
+
+body{
+  font-family: 'Source Serif 4', serif;
+  font-size: 30pt;
+  background-color: #fff;
+  margin: 0;
+}
+
+.container{
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+ul{
+  list-style-type: disc;
+  padding-left: 75px;
+  color:#eb4c00;
+}
+p{
+  color: #000;
+}
+
+.header{
+  width: 100%;
+  height: 140px;
+  position: fixed;
+  background-color: #fff;
+  z-index: 10;
+}
+
+.header__logo img{
+  width: 350px;
+  cursor: pointer;
+}
+
+.header__inner{
+  display: flex;
+  justify-content: space-between;
+  font-size: 25pt;
+  padding: 35px 0;
+  align-items: center;
+}
+
+.nav__link{
+  font-family: Felidae;
+  color: #000;
+  margin-left: 80px;
+  transition: .5s;
+}
+
+.nav__link:hover{
+  color: #eb4c00;
+}
+
+.nav__link:first-child{
+  margin-left: 0;
+}
+
+.nav__lang{
+  font-family: Felidae;
+  color: #000;
+  transition: .5s;
+}
+
+.nav__lang:hover{
+  color: #eb4c00;
+}
+
+
+.nav__second {
+  display: flex;
+}
+
+.nav__second div{
+  margin-left: 80px;
+  margin-right: 20px;
+}
+
+.bg__img-1{
+  padding-top: 50px;
+  height: 100vh;
+  background: url(img/1.png) center no-repeat;
+}
+
+.bg__img-2{
+  padding-top: 50px;
+  height: 100vh;
+  background: url(img/2.png) center no-repeat;
+}
+
+.bg__img-3{
+  padding-top: 50px;
+  height: 100vh;
+  background: url(img/3.png) center no-repeat;
+}
+
+.bg__img-4{
+  padding-top: 50px;
+  height: 100vh;
+  background: url(img/4.png) center no-repeat;
+}
+
+.about__us{
+  width: 100%;
+}
+
+.title{
+  font-family: Felidae;
+  color: #000;
+  font-size: 60pt;
+  text-align: center;
+}
+
+.section{
+  display: flex;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.section img{
+  padding: 0 40px;
+}
+
+.text__r{
+  margin-left: 170px;
+}
+
+.text__l{
+  margin-right: 170px;
+}
+
+li .text__r{
+  margin-left: -40px;
+}
+
+li .text__l{
+  margin: 0;
+  margin-left: -40px;
+}
+
+.group__txt{
+  padding-top: 10px;
+}
+
+.reg{
+  color: #000;
+  text-decoration: underline;
+  transition: .5s;
+}
+
+.reg:hover{
+  color: #eb4c00;
+}
+
+.contacts{
+  padding: 60px 0;
+}
+
+.contact{
+  margin: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.contact a{
+  padding-left: 60px;
+  color: #000;
+  transition: .5s;
+}
+
+.contact a:hover{
+  color: #eb4c00;
+}
