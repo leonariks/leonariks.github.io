@@ -74,7 +74,6 @@ body{
   width: 100%;
   max-width: 1600px;
   margin: 0 auto;
-  padding: 0 15px;
 }
 
 ul{
@@ -136,28 +135,12 @@ p{
 .nav__link:hover{
   color: #eb4c00;
 }
-.nav__link:after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 3px;
-  background-color: #fff;
-  opacity: 0;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  z-index: 1;
-  transition: opacity .2s linear;
-}
+
 
 .nav__link:first-child{
   margin-left: 0;
 }
 
-.nav__link:hover:after {
-
-  opacity: 1;
-}
 
 .nav__div{
   padding-left: 30px;
@@ -239,7 +222,7 @@ img{
 
 .text__l{
   margin-right: 120px;
-  
+
 }
 
 .text__ll{
@@ -293,6 +276,19 @@ li .text__l{
   width: 80px;
 }
 
+.facebook{
+  width: 110px; 
+  margin-left: -15px; margin-top: -10px;
+}
+
+.facebook__a{
+  margin-left: -15px;margin-top: -10px;
+}
+
+.whatsapp{
+  margin-top: -15px;
+}
+
 /* nav-toggle
 ================================= */
 
@@ -310,7 +306,7 @@ li .text__l{
   cursor: pointer;
 
   position: absolute;
-  top: 24px;
+
   right: 24px;
   z-index: 1;
 }
@@ -324,14 +320,13 @@ li .text__l{
 
   display: block;
   width: 100%;
-  height: 3px;
+  height: 4px;
 
   background-color: #eb4c00;
 
   position: absolute;
-  top: 0;
+  top: 5%;
   right: 0;
-  bottom: 0;
   left: 0;
   margin: auto;
 
@@ -347,18 +342,19 @@ li .text__l{
 .nav-toggle.active .nav-toggle__item {
 
   background: none;
+  top:-30%;
 }
 
 .nav-toggle.active .nav-toggle__item::after {
 
   transform: rotate(45deg);
-top: 9px;
+  top: 8px;
 }
 
 .nav-toggle.active .nav-toggle__item::before {
 
   transform: rotate(-45deg);
-bottom: 9px;
+  bottom: 9px;
 }
 
 
@@ -367,7 +363,7 @@ bottom: 9px;
 
   content: "";
   width: 100%;
-  height: 3px;
+  height: 4px;
 
   position: absolute;
   left: 0;
@@ -447,9 +443,6 @@ bottom: 9px;
   body{
     font-size: 20pt;
   }
-  .container{
-    max-width: 1500px;
-  }
 
   .nav__reg{
     padding-left: 450px;
@@ -498,7 +491,7 @@ bottom: 9px;
   }
 
   .bg__img-1{
-    padding-top: 30px;
+    padding-top: 0px;
   }
 
   .title{
@@ -516,8 +509,12 @@ bottom: 9px;
 
 @media(max-width:1200px){
 
+  body{
+    font-size: 18pt;
+  }
+
   .header{
-    height: 110px;
+    height: 100px;
   }
 
   .header__inner{
@@ -532,10 +529,21 @@ bottom: 9px;
 
   .title{
     font-size: 34pt;
+    padding-top: 100px;
+  }
+  .title__c{
+    margin-top: -140px;
+  }
+  .contacts{
+    padding-bottom: 150px;
   }
 }
 
 @media(max-width:1120px){
+
+  body{
+    font-size: 16pt;
+  }
 
   .nav{
     width: 100%;
@@ -546,7 +554,7 @@ bottom: 9px;
     top: 100%;
     right: 0;
     padding: 10px;
-    background-color: #ec908f;
+    background-color: #f67437;
     display: none;
 }
 
@@ -573,4 +581,117 @@ bottom: 9px;
   display: block;
   top: 40%;
 }
+}
+
+@media(max-width:1000px){
+  body{
+    font-size: 14pt;
+  }
+
+  .header__logo img{
+    left: 35%;
+  }
+
+  .text{
+    margin: 0 30px;
+  }
+
+  .text__l{
+    margin-left: 30px;
+    margin-right: 0;
+  }
+
+  .text__ll{
+    margin: 0 10px;
+  }
+}
+
+@media(max-width:860px){
+
+  body{
+    font-size: 12pt;
+  }
+
+  .title{
+    font-size: 30pt;
+    padding-top: 100px;
+  }
+
+  .icon{
+    width: 50px;
+  }
+
+  .facebook{
+    width: 70px; 
+    margin-left: -10px; margin-top: -10px;
+  }
+
+  .facebook__a{
+    margin-left: -10px;margin-top: -10px;
+  }
+
+  .whatsapp{
+    margin-top: -15px;
+  }
+}
+
+@media(max-width:720px){
+  
+  body{
+    font-size: 10pt;
+  }
+
+  .header__logo img{
+    left: 30%;
+  }
+
+  .contact a{
+    font-size:12pt ;
+  }
+}
+
+@media(max-width:620px){
+  
+  body{
+    font-size: 9pt;
+  }
+
+  .header__logo img{
+    left: 33%;
+    width: 200px;
+  }
+
+  .title{
+    font-size: 27pt;
+  }
+
+  .contact a{
+    font-size:12pt ;
+  }
+}
+
+@media(max-width:530px){
+
+  body{
+    font-size: 8pt;
+  }
+
+  .header__logo img{
+    left: 30%;
+    width: 170px;
+  }
+
+  .title{
+    font-size: 25pt;
+  }
+  .section img {
+    padding: 0 10px;
+  }
+}
+
+@media(max-width:430px){
+
+  body{
+    font-size: 6pt;
+  }
 }
