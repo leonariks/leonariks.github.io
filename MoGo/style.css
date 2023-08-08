@@ -1745,23 +1745,18 @@ hr {
     ============================ */
 
     .nav {
-
-        display: none;
-        width: 100%;
-
-        position: absolute;
-
-        top: 100%;
-        left: 0;
-
-        background-color: #ec908f;
+     display: none;
+     width: 100%;
+     position: absolute;
+     top: 100%;
+     left: 0;
+     background-color: #ec908f;
     } 
 
     .nav__link {
-
-        display: block;
-        margin: 0;
-        padding: 8px 10px;
+     display: block;
+     margin: 0;
+     padding: 8px 10px;
     }
     
     .nav-toggle {
