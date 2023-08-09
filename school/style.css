@@ -214,13 +214,12 @@ li .text__l{
 }
 
 .reg{
-  color: #000;
-  text-decoration: underline;
+  color: #eb4c00;
   transition: .5s;
 }
 
 .reg:hover{
-  color: #eb4c00;
+  text-decoration: underline;
 }
 
 .contacts{
@@ -692,8 +691,8 @@ li .text__l{
   }
 
   .text__reg{
-    font-size: 10pt;
-    padding-left: 15px;
+    font-size: 9pt;
+    padding-left: 0px;
   }
 
   .section img {
