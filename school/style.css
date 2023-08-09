@@ -177,10 +177,6 @@ img{
   padding-top: 120px;
 }
 
-.title__c{
-  padding-top: 0;
-}
-
 .section{
   display: flex;
   align-items: center;
@@ -198,7 +194,6 @@ img{
 
 .text__l{
   margin-right: 120px;
-
 }
 
 .text__ll{
@@ -413,7 +408,6 @@ li .text__l{
   .title{
     padding-top: 110px;
   }
-
 }
 
 @media(max-width: 1500px){
@@ -471,7 +465,6 @@ li .text__l{
   .nav__reg{
     padding-left: 350px;
   }
-
 }
 
 @media(max-width:1200px){
