@@ -1,0 +1,221 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+html {
+    height: 100%;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+body{
+  background-color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0 auto;
+}
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.header{
+  position: fixed;
+  width: 100%; 
+  align-items:baseline;
+  height: 60px;
+  background-color: rgb(214, 214, 214);
+}
+
+.header_inner{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.monte{
+  font-size: 20pt;
+  font-weight: 700;
+  padding-top: 15px;
+  color: orange;
+  cursor: pointer;
+}
+
+.navig{
+  display: flex;
+	justify-content: center;
+  margin-right: 35px;
+  font-size: 14pt;
+}
+
+.navig li {
+	
+	list-style: none;
+	margin-left: 15px;
+	margin-top: 18px;
+	
+}
+
+.navig a{
+  padding-left: 10px;
+  color: black;
+  transition: .5s;
+}
+
+.navig a:hover{
+  color: orange;
+}
+
+
+.main{
+  display: grid;
+  padding: 70px 5px 20px;
+  grid-template-columns: 15% 1fr 15%;
+  grid-template-rows: 1fr;
+	grid-gap: 20px 10px;
+	grid-template-areas:
+  "advertising search advertising-2"
+	"advertising news advertising-2"
+	"advertising weather advertising-2"
+	"advertising banks advertising-2"
+  "advertising car advertising-2"
+	"advertising boats advertising-2"
+  "advertising realty advertising-2"
+  "advertising food advertising-2"
+  "advertising job advertising-2";
+}
+
+.main div{
+  background-color: orange;
+  padding: 100px 10px;
+}
+
+.main div:first-child{
+
+  padding: 5px;
+}
+
+.news{
+  grid-area: news;
+}
+
+.weather{
+  grid-area: weather;
+}
+
+.banks{
+  grid-area: banks;
+}
+
+.realty{
+  grid-area: realty;
+}
+
+.car{
+  grid-area: car;
+}
+
+.boats{
+  grid-area: boats;
+}
+
+.food{
+  grid-area: food;
+}
+
+.job{
+  grid-area: job;
+}
+
+.search{
+  grid-area: search;
+}
+
+.advertising{
+  grid-area: advertising;
+}
+
+.advertising-2{
+  grid-area: advertising-2;
+}
+
+.search{
+  display: table;
+}
+
+.search div{
+  padding: 0;
+}
+
+.search__input-cell{
+  display: table-cell;
+}
+
+.search_input, .search_btn{
+  height: 25px;
+}
+
+.search_input{
+  width: 100%;
+  border: solid 1px #ccc;
+  padding: 4px;
+}
+
+.search__btn-cell{
+  width: 1%;
+  display: table-cell;
+}
+
+.search_btn{
+  margin-left: -6px;
+  border: 1px solid #ccc;
+  border-bottom-color: #b3b3b3;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.search_btn:hover{
+  background-color: #ccc;
+}
+
