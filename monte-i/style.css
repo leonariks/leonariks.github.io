@@ -81,6 +81,7 @@ body{
   align-items:baseline;
   height: 60px;
   background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAA3CAIAAABCVLduAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAADlJREFUeNq8w7cNwDAQBDDtP+/naPgKNe5NgGd3z19n5rO7saowM++IQHe/zQxV9RYRZGYkovcjwABh2qKRbrB2/gAAAABJRU5ErkJggg==) repeat-x;
+  z-index: 100;
 }
 
 .header_inner{
@@ -139,10 +140,6 @@ body{
   "advertising realty advertising-2"
   "advertising food advertising-2"
   "advertising job advertising-2";
-}
-
-.main div{
-  <!--background-color: orange;
 }
 
 .main div:first-child{
@@ -257,3 +254,17 @@ div .search{
 }
 
 
+/* Media
+================================= */
+
+@media(max-width:1100px){
+  
+  .monte{
+    font-size: 18pt;
+  }
+
+  .navig{
+    font-size: 10pt;
+  }
+
+}
