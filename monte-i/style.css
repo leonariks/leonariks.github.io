@@ -43,6 +43,12 @@ q:before, q:after {
 
 a{
   text-decoration: none;
+  color: #333;
+  transition: .3s;
+}
+
+a:hover{
+  color: orange;
 }
 
 table {
@@ -51,7 +57,7 @@ table {
 }
 body{
   background-color: #fff;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family:Arial, Helvetica, sans-serif;
   margin: 0 auto;
 }
 
@@ -60,13 +66,15 @@ body{
   margin-bottom: 10px;
   border-style: solid;
   border-width: 1px;
+  border-radius: 10px;
   border-color: #e1e1e1 #e1e1e1 #bfbfbf #bfbfbf;
   background: #f1f1f1 url(data:image/gif;base64,R0lGODlhAQAaAIAAAPHx8fn5+SH5BAAAAAAALAAAAAABABoAAAIGjI8Iy70FADs=) repeat-x;
 }
 
 .title__item{
-  font-size: 16pt;
+  font-size: 14pt;
   color: #333;
+  padding-left: 5px;
 }
 
 .container{
@@ -76,7 +84,7 @@ body{
 }
 
 .head{
-  position: fixed;
+  position: absolute;
   width: 100%; 
   align-items:baseline;
   height: 60px;
@@ -86,7 +94,6 @@ body{
 
 .header_inner{
   display: flex;
-  justify-content: space-around;
   align-items: center;
 }
 
@@ -94,35 +101,64 @@ body{
   font-size: 20pt;
   font-weight: 700;
   padding-top: 15px;
+  margin-left: 50px;
   color: orange;
   cursor: pointer;
 }
 
+.time{
+  color: #333;
+  font-size: 12pt;
+  font-weight: 500;
+  padding-top: 18px;
+  margin-left: 25%;
+  cursor: pointer;
+}
+
+
+/* Navig
+=================================*/
+
 .navig{
-  display: flex;
+  display: none;
 	justify-content: center;
   margin-right: 35px;
   font-size: 12pt;
 }
 
-.navig li {
-	
+.navig li {	
 	list-style: none;
 	margin-left: 15px;
 	margin-top: 18px;
-	
 }
 
 .navig a{
   padding-left: 10px;
-  color: black;
-  transition: .5s;
 }
 
-.navig a:hover{
-  color: orange;
+
+/* Navig__left
+=================================*/
+
+.navig__left{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  font-size: 12pt;
+  margin-top: 40%;
 }
 
+.navig__left li {	
+  list-style: none;
+	margin: 0;
+  padding: 10px 0;	
+  background: url(data:image/gif;base64,R0lGODlhAwABAIAAAM/R1P///yH5BAAAAAAALAAAAAADAAEAAAICRFIAOw==) repeat-x left bottom;
+}
+
+.navig__left a{
+  padding-left: 10px;
+
+}
 
 .main{
   display: grid;
@@ -131,19 +167,21 @@ body{
   grid-template-rows: 1fr;
 	grid-gap: 20px 10px;
 	grid-template-areas:
-  "advertising search advertising-2"
-	"advertising news advertising-2"
-	"advertising weather advertising-2"
-	"advertising banks advertising-2"
+  "navigation__left search advertising-2"
+  "navigation__left news advertising-2"
+	"navigation__left weather advertising-2"
+  "advertising banks advertising-2"
   "advertising car advertising-2"
 	"advertising boats advertising-2"
   "advertising realty advertising-2"
   "advertising food advertising-2"
-  "advertising job advertising-2";
+  "advertising job advertising-2"
+  "advertising transport advertising-2"
+  "advertising poster advertising-2"
+  "advertising polyclinics advertising-2";
 }
 
 .main div:first-child{
-
   padding: 5px;
 }
 
@@ -190,16 +228,14 @@ body{
 .advertising-2{
   grid-area: advertising-2;
 }
-div .search{
-  background-color: #fff;
+
+.navigation__left{
+  grid-area: navigation__left;
 }
+/* Search
+=================================*/
 .search{
   display: table;
-}
-
-.search div{
-  padding: 0;
-  background-color: #fff;
 }
 
 .search__input-cell{
@@ -213,6 +249,7 @@ div .search{
 .search_input{
   width: 100%;
   border: solid 1px #ccc;
+  border-radius: 10px;
   box-shadow: 0 1px 3px #eee inset;
   padding: 4px;
 }
@@ -228,8 +265,9 @@ div .search{
 }
 
 .search_btn{
-  margin-left: -6px;
+  margin-left: -35%;
   border: 1px solid #ccc;
+  border-radius: 10px;
   border-bottom-color: #b3b3b3;
   cursor: pointer;
   transition: .5s;
@@ -245,12 +283,45 @@ div .search{
 }
 
 /* Weather
-================================= */
+=================================*/
 .weather{
   
 }
 .weather__items{
 
+}
+
+/* Bank
+=================================*/
+.bank__frame{
+  width: 100%;
+  border: 0;
+  overflow: hidden;
+  background-color:transparent;height:281px;
+}
+
+/* Cars
+=================================*/
+.section_header{
+  display: flex;
+  align-items: baseline;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.section__title{
+  font-size: 14pt;
+  font-weight: 500;
+  color: #333;
+}
+
+.section__items{
+  display: flex;
+  font-size: 10pt;
+}
+
+.section__item{
+  margin-left: 20px;
 }
 
 
