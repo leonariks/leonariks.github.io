@@ -66,7 +66,7 @@
             <li><a href="#news">Новости</a></li>
             <li><a href="#weather">Погода</a></li>
             <li><a href="#banks">Курс и банки</a></li>
-            <li><a href="#car">Авто и Мото</a></li>
+            <li><a href="#car__moto">Авто и Мото</a></li>
             <li><a href="#boats">Лодки</a></li>
             <li><a href="#realty">Недвижимость</a></li>
             <li><a href="#food">Вкусные места</a></li>
@@ -156,16 +156,16 @@
 
         <!--Cars
         =========================-->
-      <div class="car">
+      <div id="car__moto" class="car">
         <div class="container">
 
           <div class="section_header">
             <h2 class="section__title">
               <a href="">Авто и Мото</a></h2>
             <div class="section__items">
-              <a href="#" class="section__item" onclick="cars()">Автомобили</a>
-              <a href="#" class="section__item" onclick="motoc()">Мотоциклы</a>
-              <a href="#" class="section__item">Запчасти</a>
+              <a class="section__item" id="cars" onclick="cars()">Автомобили</a>
+              <a id="motob" class="section__item" onclick="motoc()">Мотоциклы</a>
+              <a id="spar" class="section__item" onclick="spares()">Запчасти</a>
             </div>
           </div><!--section_header-->
 
@@ -221,43 +221,88 @@
             <div class="cards">
 
               <div class="card">
-                <a class="card__link" href="https://www.bugatti.com/" target="_blank"></a>
+                <a class="card__link" href="https://motorrika.ru/motorcycles/kawasaki/mototsikl-kawasaki-ninja-1000sx---metallic-carbon-gray-metallic-diablo-black-2022" target="_blank"></a>
                 <div class="card__picture">
-                  <img src="img/cars/car.jpeg" alt="">
+                  <img src="img/cars/moto.jpeg" alt="">
                 </div>
                 <div class="card__title">Moto</div>
-                <div class="card__price">10 000 000$</div>
+                <div class="card__price">1 000 000$</div>
               </div><!--Card-->
 
               <div class="card">
-                <a class="card__link" href="https://www.bugatti.com/" target="_blank"></a>
+                <a class="card__link" href="https://motorrika.ru/motorcycles/kawasaki/mototsikl-kawasaki-ninja-1000sx---metallic-carbon-gray-metallic-diablo-black-2022" target="_blank"></a>
                 <div class="card__picture">
-                  <img src="img/cars/car.jpeg" alt="">
+                  <img src="img/cars/moto.jpeg" alt="">
                 </div>
                 <div class="card__title">Moto</div>
-                <div class="card__price">10 000 000$</div>
+                <div class="card__price">1 000 000$</div>
               </div><!--Card-->
 
               <div class="card">
-                <a class="card__link" href="https://www.bugatti.com/" target="_blank"></a>
+                <a class="card__link" href="https://motorrika.ru/motorcycles/kawasaki/mototsikl-kawasaki-ninja-1000sx---metallic-carbon-gray-metallic-diablo-black-2022" target="_blank"></a>
                 <div class="card__picture">
-                  <img src="img/cars/car.jpeg" alt="">
+                  <img src="img/cars/moto.jpeg" alt="">
                 </div>
                 <div class="card__title">Moto</div>
-                <div class="card__price">10 000 000$</div>
+                <div class="card__price">1 000 000$</div>
               </div><!--Card-->
 
               <div class="card">
-                <a class="card__link" href="https://www.bugatti.com/" target="_blank"></a>
+                <a class="card__link" href="https://motorrika.ru/motorcycles/kawasaki/mototsikl-kawasaki-ninja-1000sx---metallic-carbon-gray-metallic-diablo-black-2022" target="_blank"></a>
                 <div class="card__picture">
-                  <img src="img/cars/car.jpeg" alt="">
+                  <img src="img/cars/moto.jpeg" alt="">
                 </div>
-                <div class="card__title">Buggati Chiron</div>
-                <div class="card__price">10 000 000$</div>
+                <div class="card__title">Moto</div>
+                <div class="card__price">1 000 000$</div>
               </div><!--Card-->
 
             </div><!--cards-->
           </div><!--cards__display__moto-->
+
+          <!--Spares__cards
+          ===============================-->
+
+          <div id="spares" class="cards__display cards__spares">
+            <div class="cards">
+
+              <div class="card">
+                <a class="card__link" href="https://www.prmail.lv/2018/06/blog-post.html" target="_blank"></a>
+                <div class="card__picture">
+                  <img src="img/cars/spare.jpeg" alt="">
+                </div>
+                <div class="card__title">Spare</div>
+                <div class="card__price">1 000$</div>
+              </div><!--Card-->
+
+              <div class="card">
+                <a class="card__link" href="https://www.prmail.lv/2018/06/blog-post.html" target="_blank"></a>
+                <div class="card__picture">
+                  <img src="img/cars/spare.jpeg" alt="">
+                </div>
+                <div class="card__title">Spare</div>
+                <div class="card__price">1 000$</div>
+              </div><!--Card-->
+
+              <div class="card">
+                <a class="card__link" href="https://www.prmail.lv/2018/06/blog-post.html" target="_blank"></a>
+                <div class="card__picture">
+                  <img src="img/cars/spare.jpeg" alt="">
+                </div>
+                <div class="card__title">Spare</div>
+                <div class="card__price">1 000$</div>
+              </div><!--Card-->
+
+              <div class="card">
+                <a class="card__link" href="https://www.prmail.lv/2018/06/blog-post.html" target="_blank"></a>
+                <div class="card__picture">
+                  <img src="img/cars/spare.jpeg" alt="">
+                </div>
+                <div class="card__title">Spare</div>
+                <div class="card__price">1 000$</div>
+              </div><!--Card-->
+
+            </div><!--cards-->
+          </div><!--cards__display__spares-->
 
         </div><!--Container-->
       </div>
@@ -270,9 +315,9 @@
             <h2 class="section__title">
               <a href="">Лодки</a></h2>
             <div class="section__items">
-              <a href="#" class="section__item">Катера</a>
-              <a href="#" class="section__item">Яхты</a>
-              <a href="#" class="section__item">Запчасти</a>
+              <a class="section__item">Катера</a>
+              <a class="section__item">Яхты</a>
+              <a class="section__item">Запчасти</a>
             </div>
           </div><!--section_header-->
 
@@ -329,9 +374,9 @@
             <h2 class="section__title">
               <a href="">Недвижимость</a></h2>
             <div class="section__items">
-              <a href="#" class="section__item">Аренда</a>
-              <a href="#" class="section__item">Покупка</a>
-              <a href="#" class="section__item">Продажа</a>
+              <a class="section__item">Аренда</a>
+              <a class="section__item">Покупка</a>
+              <a class="section__item">Продажа</a>
             </div>
           </div><!--section_header-->
 
@@ -408,7 +453,7 @@
             <li><a href="#news">Новости</a></li>
             <li><a href="#weather">Погода</a></li>
             <li><a href="#banks">Курс и банки</a></li>
-            <li><a href="#car">Авто и Мото</a></li>
+            <li><a href="#car__moto">Авто и Мото</a></li>
             <li><a href="#boats">Лодки</a></li>
             <li><a href="#realty">Недвижимость</a></li>
             <li><a href="#food">Вкусные места</a></li>
