@@ -346,6 +346,11 @@ body{
   width: 24%;
   font-size: 11pt;
   font-weight: 400;
+  transition: .4s;
+}
+
+.card:hover{
+  transform: translate3d(-2px,-2px,0);
 }
 
 .cards .card:first-child{
