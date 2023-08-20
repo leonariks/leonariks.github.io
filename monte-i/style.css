@@ -282,16 +282,16 @@ body{
 /* News
 =================================*/
 .news__item{
-
+  width: 100%;
+  height: 100%;
 }
 
 /* Weather
 =================================*/
-.weather{
-  
-}
-.weather__items{
 
+.weather__item{
+width: 100%;
+height: 100%;
 }
 
 /* Bank
@@ -323,6 +323,10 @@ body{
   display: flex;
   font-size: 11pt;
   font-weight: 400;
+}
+
+.section__item:first-child{
+  border-bottom:2px solid #f35e49;
 }
 
 .section__item{
