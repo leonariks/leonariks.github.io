@@ -335,6 +335,10 @@ body{
   display: block;
 }
 
+.cards__moto{
+  display: none;
+}
+
 .cards{
   display: flex;
   align-items: baseline;
@@ -352,6 +356,7 @@ body{
 .card:hover{
   transform: translate3d(-2px,-2px,0);
 }
+
 
 .cards .card:first-child{
   padding: 0;
@@ -377,6 +382,7 @@ body{
 .card__price{
   margin-bottom: 0;
 }
+
 
 /* Media
 ================================= */
