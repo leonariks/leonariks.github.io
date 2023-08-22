@@ -55,6 +55,7 @@ body{
 .control-file{
   margin-bottom:20px
 }
+
 .box button{
   display:block;
   width:100%;
@@ -74,9 +75,6 @@ body{
 .box button:disabled{
   opacity: .6;
   cursor: not-allowed;
-}
-.box button:disabled:hover{
-  opacity: .6;
   background-color:#eb4c00;
 }
 .box button:focus{

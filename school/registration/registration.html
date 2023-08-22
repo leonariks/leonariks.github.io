@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="style.css" rel="stylesheet">
   <link rel="icon" href="../icons/LinguaLab.png">
+  <script src="checkbox.js"></script>
+  <script src="contact.php"></script>
+  <script src="script.js"></script>
   <title>Регистрация</title>
 </head>
 <body>
@@ -20,7 +23,7 @@
           <input id="contactFF" name="contactFF" type="email" required>
         </div>
         <div class="formname">
-          <input id="checkbox" type="checkbox" name="checkbox" onchange="document.getElementById('submitFF').disabled = !this.checked;" />
+          <input id="checkbox" type="checkbox" name="checkbox" onchange="check()"/>
           <label for="checkbox">Согласен на обработку <a href="">персональных данных</a></label>    
         </div><br>
         <button class="btn" type="submit" id="submitFF">Отправить сообщение</button>
