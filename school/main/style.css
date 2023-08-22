@@ -81,6 +81,7 @@ ul{
   padding-left: 75px;
   color:#eb4c00;
 }
+
 p{
   color: #000;
 }
@@ -94,12 +95,10 @@ p{
 }
 
 .header.active {
-
   background-color: #fff;
 }
 
 .header__logo img{
-
   position: absolute;
   z-index: 1;
   left: 42%;
@@ -118,7 +117,6 @@ p{
   display: flex;
 }
 
-
 .nav__reg{
   padding-left: 490px;
 }
@@ -134,11 +132,9 @@ p{
   color: #eb4c00;
 }
 
-
 .nav__link:first-child{
   margin-left: 0;
 }
-
 
 .nav__div{
   padding-left: 30px;
@@ -154,13 +150,12 @@ p{
   color: #eb4c00;
 }
 
-
 img{
   max-width: 100%;
 }
 
 .bg__img{
-  padding-top: 70px;
+  padding-top: 80px;
   width: 100%;
 }
 
