@@ -19,8 +19,12 @@
           <label for="contactFF">E-mail:</label>
           <input id="contactFF" name="contactFF" type="email" required>
         </div>
+        <div class="formname">
+          <input id="checkbox" type="checkbox" name="checkbox" onchange="document.getElementById('submitFF').disabled = !this.checked;" />
+          <label for="checkbox">Согласен на обработку <a href="">персональных данных</a></label>    
+      </div>
         <button class="btn" type="submit" id="submitFF">Отправить сообщение</button>
-      </form>
+    </form>
   </div>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="script.js"></script>

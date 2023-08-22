@@ -56,7 +56,6 @@ body{
   margin-bottom:20px
 }
 .box button{
-  cursor: pointer;
   display:block;
   width:100%;
   background-color:#eb4c00;
@@ -70,6 +69,15 @@ body{
 }
 .box button:hover{
   background-color:#b93b00;
+  cursor: pointer;
+}
+.box button:disabled{
+  opacity: .6;
+  cursor: not-allowed;
+}
+.box button:disabled:hover{
+  opacity: .6;
+  background-color:#eb4c00;
 }
 .box button:focus{
   outline:none
