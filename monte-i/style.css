@@ -334,18 +334,11 @@ height: 100%;
 }
 
 
-/* Cars
+
+/* Cards
 =================================*/
 .cards__display{
   display: block;
-}
-
-.cards__moto{
-  display: none;
-}
-
-.cards__spares{
-  display: none;
 }
 
 .cards{
@@ -398,6 +391,36 @@ height: 100%;
 
 .card__price{
   margin-bottom: 0;
+}
+
+/* Cars
+=================================*/
+.cards__moto{
+  display: none;
+}
+
+.cards__spares{
+  display: none;
+}
+
+/* Boats
+=================================*/
+.cards__yacht{
+  display: none;
+}
+
+.cards__boatspares{
+  display: none;
+}
+
+/* Realty
+=================================*/
+.cards__pushare{
+  display: none;
+}
+
+.cards__sell{
+  display: none;
 }
 
 /* Media
