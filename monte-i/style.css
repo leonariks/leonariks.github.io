@@ -168,7 +168,7 @@ body{
 .main{
   display: grid;
   padding: 70px 5px 20px;
-  grid-template-columns: 15% 1fr 15%;
+  grid-template-columns: 15% 900px 15%;
   grid-template-rows: 1fr;
 	grid-gap: 20px 10px;
 	grid-template-areas:
