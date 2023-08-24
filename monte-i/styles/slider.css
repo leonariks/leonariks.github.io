@@ -2,6 +2,23 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider__display::before, 
+.slider__display::after{
+  background: linear-gradient(to right, white 10%, rgba(255, 255, 255, 0) 100%);
+  content: "";
+  height: 120px;
+  position: absolute;
+  width: 80px;
+  z-index: 5;
+}
+
+.slider__display::after{
+  right: 0;
+  transform: rotateZ(180deg);
 }
 
 .sliders{
@@ -11,7 +28,7 @@
 .slider{
   position: relative;
   transition: .4s;
-  padding-left: 20px;
+  padding-left: 10px;
   color: rgba(255,255,255, 0);
   opacity: .7;
 }
@@ -44,10 +61,10 @@
 }
 
 .slider__picture h3{
-  font-size: 24pt;
+  font-size: 22pt;
   position: absolute;
   top: 40%;
-  left: 35%;
+  left: 30%;
   z-index: 5;
   cursor: pointer;
 }
@@ -57,7 +74,7 @@
   position: absolute;
   cursor: pointer;
   font-size: 25px;
-  color: #000;
+  color: #333;
   background-color: transparent;
   border: 0;
   border-radius: 50%;
@@ -69,16 +86,16 @@
 
 
 .sliders .slick-arrow:hover{
-  background-color:#fff;
   opacity: 1;
 }
 
 .sliders .slick-prev {
   transform: rotate(180deg);
   top: 40%;
+  left: -0.5%;
 }
 
 .sliders .slick-next {
-  right: 0;
+  right: -0.5%;
   top: 40%;
 }

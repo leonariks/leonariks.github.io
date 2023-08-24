@@ -178,6 +178,7 @@ body{
   "advertising banks advertising-2"
   "advertising car advertising-2"
 	"advertising boats advertising-2"
+  "advertising advertising-3 advertising-2"
   "advertising realty advertising-2"
   "advertising food advertising-2"
   "advertising job advertising-2"
@@ -422,8 +423,15 @@ height: 100%;
 .cards__sell{
   display: none;
 }
-/*Slider
+/*Job
 ====================================*/
+.vacancies{
+  margin-left: 20px;
+  border-bottom: 2px solid #fff;
+}
+.vacancies:active{
+  border-bottom: 2px solid #f35e49;
+}
 
 
 /* Media

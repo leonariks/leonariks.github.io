@@ -1,6 +1,6 @@
 $(document).ready(function () {
   $(".sliders").slick({
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 1,
     infinite: true,
     centerMode: true,
