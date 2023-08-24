@@ -433,6 +433,38 @@ height: 100%;
   border-bottom: 2px solid #f35e49;
 }
 
+.job__row{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.job__col{
+  margin-left: 10px;
+}
+
+.job__items .job__vacantion:first-child{
+  padding: 0;
+}
+
+.job__vacantion{
+  padding-top: 30px;
+  text-align: left;
+}
+
+.vacation__title a{
+  font-size: 14pt;
+  font-weight: 500;
+  color: #f35e49;
+}
+
+.vacation__title a:hover{
+  color: #a93f31;
+}
+
+.vacation__desc{
+  padding-top: 8px;
+}
 
 /* Media
 ================================= */
