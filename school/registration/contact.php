@@ -1,6 +1,7 @@
 <?php
 if (isset ($_POST['contactFF'])) {
   $to = "selyutin85@gmail.com";
+  $from = "selyutin85@gmail.com";
   $subject = "LinguaLab Новый пользователь".$_SERVER['HTTP_REFERER'];
   $message = "Имя пользователя: ".$_POST['nameFF']."\nEmail пользователя ".$_POST['contactFF']."\nАдрес сайта: ".$_SERVER['HTTP_REFERER'];
  
