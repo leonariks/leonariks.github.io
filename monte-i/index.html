@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="styles/style.css">
   <link rel="stylesheet" href="styles/slider.css">
   <link rel="stylesheet" href="styles/carousel.css">
+  <link rel="stylesheet" href="styles/spoiler.css">
   <link
   rel="stylesheet"
   type="text/css"
@@ -19,6 +20,8 @@
   <script src="javascript/auto.js"></script>
   <script src="javascript/boats.js"></script>
   <script src="javascript/realties.js"></script>
+  <script src="javascript/transport.js"></script>
+  <script src="javascript/spoiler.js"></script>
 
 </head>
 
@@ -869,26 +872,45 @@
           <h2 class="section__title">
             <a href="">Транспорт</a></h2>
           <div class="section__items">
-            <a id="buses" class="section__item" onclick="">Автобусы</a>
+            <a id="buses" class="section__item" onclick="bus()">Автобусы</a>
             <a id="taxis"
-            class="section__item" onclick="">Такси</a>
+            class="section__item">Такси</a>
             <a id="avias" 
-            class="section__item" onclick="">Авиарейсы</a>
+            class="section__item" onclick="avia()">Авиарейсы</a>
           </div>
         </div><!--section_header-->
+
         <!--Bus
         ==============================-->
-        <div class="bus">
+        <div id="bus" class="bus">
           <div class="bus__col">
-            <table class="bus__table">
-
-              <tr class="bus__top">
+            <span id="arrow" class="spoiler_arrow" onclick="second()"><svg viewBox="-122.9 121.1 105.9 61.9"><path d="M-63.2 180.3l43.5-43.5c1.7-1.7 2.7-4 2.7-6.5s-1-4.8-2.7-6.5c-1.7-1.7-4-2.7-6.5-2.7s-4.8 1-6.5 2.7L-69.9 161l-37.2-37.2c-1.7-1.7-4-2.7-6.5-2.7s-4.8 1-6.5 2.6c-1.9 1.8-2.8 4.2-2.8 6.6 0 2.3.9 4.6 2.6 6.5 11.4 11.5 41 41.2 43 43.3l.2.2c3.6 3.6 10.3 3.6 13.9 0z"></path></svg></span>
+            <table id="first" class="bus__table table__first" > 
+              <tr  class="bus__top">
                 <th>Город отправления</th>
                 <th>Город прибытия</th>
                 <th>Время отправления</th>
                 <th>Время прибытия</th>
                 <th>Перевозчик</th>
                 <th>Цена</th>
+              </tr><!--bus__top-->
+
+              <tr class="bus__item">
+                <th>Будва</th>
+                <th>Подгорица</th>
+                <th>05:55</th>
+                <th>07:30</th>
+                <th>Vot Turist</th>
+                <th>5.5€</th>
+              </tr><!--bus__top-->
+
+              <tr class="bus__item">
+                <th>Будва</th>
+                <th>Подгорица</th>
+                <th>06:00</th>
+                <th>07:30</th>
+                <th>KRIVOKAPIĆ TURS</th>
+                <th>5.5€</th>
               </tr><!--bus__top-->
 
               <tr class="bus__item">
@@ -900,10 +922,167 @@
                 <th>3.5€</th>
               </tr><!--bus__top-->
 
-          </table>
-          </div>
-        </div>
+              <tr class="bus__item">
+                <th>Будва</th>
+                <th>Улцинь</th>
+                <th>07:49</th>
+                <th>09:49</th>
+                <th>MAGIC LINE</th>
+                <th>—</th>
+              </tr><!--bus__top-->
+            </table>
+            <span id="arrow_second" class="spoiler_arrow second__arrow" onclick="first()"><svg viewBox="-122.9 121.1 105.9 61.9"><path d="M-63.2 180.3l43.5-43.5c1.7-1.7 2.7-4 2.7-6.5s-1-4.8-2.7-6.5c-1.7-1.7-4-2.7-6.5-2.7s-4.8 1-6.5 2.7L-69.9 161l-37.2-37.2c-1.7-1.7-4-2.7-6.5-2.7s-4.8 1-6.5 2.6c-1.9 1.8-2.8 4.2-2.8 6.6 0 2.3.9 4.6 2.6 6.5 11.4 11.5 41 41.2 43 43.3l.2.2c3.6 3.6 10.3 3.6 13.9 0z"></path></svg></span>
+              <table id="second" class="bus__table table__second"> 
+                <tr class="bus__top">
+                  <th>Город отправления</th>
+                  <th>Город прибытия</th>
+                  <th>Время отправления</th>
+                  <th>Время прибытия</th>
+                  <th>Перевозчик</th>
+                  <th>Цена</th>
+                </tr><!--bus__top-->
 
+                <tr class="bus__item">
+                  <th>Будва</th>
+                  <th>Подгорица</th>
+                  <th>05:55</th>
+                  <th>07:30</th>
+                  <th>Vot Turist</th>
+                  <th>5.5€</th>
+                </tr><!--bus__top-->
+
+                <tr class="bus__item">
+                  <th>Будва</th>
+                  <th>Подгорица</th>
+                  <th>06:00</th>
+                  <th>07:30</th>
+                  <th>KRIVOKAPIĆ TURS</th>
+                  <th>5.5€</th>
+                </tr><!--bus__top-->
+
+                <tr class="bus__item">
+                  <th>Будва</th>
+                  <th>Котор</th>
+                  <th>07:14</th>
+                  <th>07:38</th>
+                  <th>MF TRAVEL</th>
+                  <th>3.5€</th>
+                </tr><!--bus__top-->
+
+                <tr class="bus__item">
+                  <th>Будва</th>
+                  <th>Улцинь</th>
+                  <th>07:49</th>
+                  <th>09:49</th>
+                  <th>MAGIC LINE</th>
+                  <th>—</th>
+                </tr><!--bus__top-->
+
+                <tr class="bus__item">
+                  <th>Будва</th>
+                  <th>Подгорица</th>
+                  <th>11:15</th>
+                  <th>12:51</th>
+                  <th>ALO EXPRESS</th>
+                  <th>6.5€</th>
+                </tr><!--bus__top-->
+              
+                <tr class="bus__item">
+                  <th>Будва</th>
+                  <th>Бар</th>
+                  <th>11:20</th>
+                  <th>12:30</th>
+                  <th>STEVAN TURS</th>
+                  <th>4.5€</th>
+                </tr><!--bus__top-->
+
+                <tr class="bus__item">
+                  <th>Будва</th>
+                  <th>Херцег-Нови</th>
+                  <th>11:59</th>
+                  <th>13:50</th>
+                  <th>AUTOPREVOZ ZATON</th>
+                  <th>5.5€</th>
+                </tr><!--bus__top-->
+
+                <tr class="bus__item">
+                  <th>Будва</th>
+                  <th>Бар</th>
+                  <th>12:30</th>
+                  <th>13:31</th>
+                  <th>ZEJDIN</th>
+                  <th>4.5€</th>
+                </tr><!--bus__top-->
+
+                <tr class="bus__item">
+                  <th>Будва</th>
+                  <th>Подгорица</th>
+                  <th>12:35</th>
+                  <th>13:55</th>
+                  <th>BJELOPAVLIA TRANS</th>
+                  <th>6.5€</th>
+                </tr><!--bus__top-->
+
+                <tr class="bus__item">
+                  <th>Будва</th>
+                  <th>Херцег-Нови</th>
+                  <th>12:50</th>
+                  <th>14:36</th>
+                  <th>KRIVOKAPIĆ TURS</th>
+                  <th>6.5€</th>
+                </tr><!--bus__top-->
+
+                <tr class="bus__item">
+                  <th>Будва</th>
+                  <th>Херцег-Нови</th>
+                  <th>12:50</th>
+                  <th>14:36</th>
+                  <th>KRIVOKAPIĆ TURS</th>
+                  <th>6.5€</th>
+                </tr><!--bus__top-->
+
+                <tr class="bus__item">
+                  <th>Будва</th>
+                  <th>Улцинь</th>
+                  <th>12:55</th>
+                  <th>14:30</th>
+                  <th>ZEJDIN</th>
+                  <th>7€</th>
+                </tr><!--bus__top-->
+
+                <tr class="bus__item">
+                  <th>Будва</th>
+                  <th>Подгорица</th>
+                  <th>13:00</th>
+                  <th>14:20</th>
+                  <th>ELLIT EXPRESS</th>
+                  <th>7€</th>
+                </tr><!--bus__top-->
+
+                <tr class="bus__item">
+                  <th>Будва</th>
+                  <th>Никшич</th>
+                  <th>13:23</th>
+                  <th>15:58</th>
+                  <th>STRIKOVIĆ</th>
+                  <th>8€</th>
+                </tr><!--bus__top-->
+
+                <tr class="bus__item">
+                  <th>Будва</th>
+                  <th>Никшич</th>
+                  <th>13:23</th>
+                  <th>15:58</th>
+                  <th>STRIKOVIĆ</th>
+                  <th>8€</th>
+                </tr><!--bus__top-->
+          
+            </table>
+
+          </div>
+        </div><!--Bus-->
+        <!--Avia
+        ============================-->
         <div class="avia" id="avia">
           <iframe frameborder="0" style=" overflow: hidden; border: 0; width: 880px; height: 300px;" src="https://rasp.yandex.ru/informers/station/9623795/?type=tablo"></iframe>
         </div>
@@ -944,6 +1123,8 @@
 
 <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
 <script src="javascript/slider.js"></script>
+<script src="javascript/spoiler.js"></script>
 </body>
 </html>
