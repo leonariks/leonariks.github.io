@@ -869,13 +869,44 @@
           <h2 class="section__title">
             <a href="">Транспорт</a></h2>
           <div class="section__items">
-            <a id="" class="section__item" onclick="">Автобусы</a>
-            <a id=""
+            <a id="buses" class="section__item" onclick="">Автобусы</a>
+            <a id="taxis"
             class="section__item" onclick="">Такси</a>
-            <a id="" 
-            class="section__item" onclick="">Рейсы</a>
+            <a id="avias" 
+            class="section__item" onclick="">Авиарейсы</a>
           </div>
         </div><!--section_header-->
+        <!--Bus
+        ==============================-->
+        <div class="bus">
+          <div class="bus__col">
+            <table class="bus__table">
+
+              <tr class="bus__top">
+                <th>Город отправления</th>
+                <th>Город прибытия</th>
+                <th>Время отправления</th>
+                <th>Время прибытия</th>
+                <th>Перевозчик</th>
+                <th>Цена</th>
+              </tr><!--bus__top-->
+
+              <tr class="bus__item">
+                <th>Будва</th>
+                <th>Котор</th>
+                <th>07:14</th>
+                <th>07:38</th>
+                <th>MF TRAVEL</th>
+                <th>3.5€</th>
+              </tr><!--bus__top-->
+
+          </table>
+          </div>
+        </div>
+
+        <div class="avia" id="avia">
+          <iframe frameborder="0" style=" overflow: hidden; border: 0; width: 880px; height: 300px;" src="https://rasp.yandex.ru/informers/station/9623795/?type=tablo"></iframe>
+        </div>
       </div>
         <!--Poster
         =========================-->
@@ -912,7 +943,7 @@
 </div> <!--Container-->
 
 <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="javascript/slider.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="javascript/slider.js"></script>
 </body>
 </html>

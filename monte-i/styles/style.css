@@ -466,6 +466,43 @@ height: 100%;
   padding-top: 8px;
 }
 
+
+/* Transport
+================================= */
+.bus{
+  display: block;
+}
+.avia{
+  display: none;
+}
+th{
+  padding: 10px;
+}
+.bus__col{
+  display: flex;
+  justify-content: center;
+}
+.bus__table{
+  font-size: 11pt;
+  text-transform: uppercase;
+}
+.bus__table tr:hover{
+  background-color: #f4f4f4;
+}
+.bus__top {
+  font-weight: 500;
+  background-color: #f35e49;
+  color: #fff;
+}
+.bus__table .bus__top:hover{
+  background-color: #f35e49;
+}
+.bus__item{
+  cursor: pointer;
+  font-size: 14pt;
+}
+
+
 /* Media
 ================================= */
 
