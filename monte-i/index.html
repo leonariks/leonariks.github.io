@@ -55,7 +55,7 @@
           function date_time()
           {
               var current_datetime = new Date();
-              var day = zero_first_format(current_datetime.getDate());
+              var day = zero_first_format(current_datetime.gethate());
               var month = zero_first_format(current_datetime.getMonth()+1);
               var year = current_datetime.getFullYear();
               var hours = zero_first_format(current_datetime.getHours());
@@ -167,7 +167,7 @@
         <div class="titles">
           <h3 class="title__item">Курс и банки</h3>
         </div>
-        <iframe style="width:100%;border:0;overflow:hidden;background-color:transparent;height:235px" scrolling="no" src="https://fortrader.org/informers/getInformer?st=1&cat=7&title=%D0%9A%D1%83%D1%80%D1%81%D1%8B%20%D0%B2%D0%B0%D0%BB%D1%8E%D1%82%20%D0%A6%D0%91%20%D0%A0%D0%A4&texts=%7B%22toolTitle%22%3A%22%D0%92%D0%B0%D0%BB%D1%8E%D1%82%D0%B0%22%2C%22todayCourse%22%3A%22RUB%22%2C%22tomorrowCourse%22%3A%22%D0%97%D0%B0%D0%B2%D1%82%D1%80%D0%B0%22%7D&mult=1&showGetBtn=0&hideHeader=0&hideDate=0&w=0&codes=1&colors=titleTextColor%3D222222%2CtitleBackgroundColor%3Dfff%2CthTextColor%3D454545%2CthBackgroundColor%3Dfff%2CsymbolTextColor%3D454545%2CtableTextColor%3D454545%2CborderTdColor%3De8e8e8%2CtableBorderColor%3De8e8e8%2CprofitTextColor%3D89bb50%2CprofitBackgroundColor%3Deaf7e1%2ClossTextColor%3Dff1616%2ClossBackgroundColor%3Df6e1e1%2CoddBackgroundTrColor%3Dfff%2CevenBackgroundTrColor%3Dfff%2CdataTextColor%3D787878%2CdataBackgroundColor%3Dfff%2CinformerLinkTextColor%3D5e5e5e%2CinformerLinkBackgroundColor%3Df1f1f1&items=2%2C21&columns=todayCourse%2CtomorrowCourse&toCur=11111"></iframe>
+        <iframe style="width:100%;border:0;overflow:hidden;background-color:transparent;height:235px" scrolling="no" src="https://fortrader.org/informers/getInformer?st=1&cat=7&title=%D0%9A%D1%83%D1%80%D1%81%D1%8B%20%D0%B2%D0%B0%D0%BB%D1%8E%D1%82%20%D0%A6%D0%91%20%D0%A0%D0%A4&texts=%7B%22toolTitle%22%3A%22%D0%92%D0%B0%D0%BB%D1%8E%D1%82%D0%B0%22%2C%22todayCourse%22%3A%22RUB%22%2C%22tomorrowCourse%22%3A%22%D0%97%D0%B0%D0%B2%D1%82%D1%80%D0%B0%22%7D&mult=1&showGetBtn=0&hideHeader=0&hideDate=0&w=0&codes=1&colors=titleTextColor%3D222222%2CtitleBackgroundColor%3Dfff%2CthTextColor%3D454545%2CthBackgroundColor%3Dfff%2CsymbolTextColor%3D454545%2CtableTextColor%3D454545%2CborderthColor%3De8e8e8%2CtableBorderColor%3De8e8e8%2CprofitTextColor%3D89bb50%2CprofitBackgroundColor%3Deaf7e1%2ClossTextColor%3Dff1616%2ClossBackgroundColor%3Df6e1e1%2CoddBackgroundTrColor%3Dfff%2CevenBackgroundTrColor%3Dfff%2CdataTextColor%3D787878%2CdataBackgroundColor%3Dfff%2CinformerLinkTextColor%3D5e5e5e%2CinformerLinkBackgroundColor%3Df1f1f1&items=2%2C21&columns=todayCourse%2CtomorrowCourse&toCur=11111"></iframe>
       </div>
 
         <!--Cars
@@ -775,8 +775,8 @@
         <div id="bus" class="bus">
           <div class="bus__col">
             <span id="arrow" class="spoiler_arrow" onclick="second()"><svg viewBox="-122.9 121.1 105.9 61.9"><path d="M-63.2 180.3l43.5-43.5c1.7-1.7 2.7-4 2.7-6.5s-1-4.8-2.7-6.5c-1.7-1.7-4-2.7-6.5-2.7s-4.8 1-6.5 2.7L-69.9 161l-37.2-37.2c-1.7-1.7-4-2.7-6.5-2.7s-4.8 1-6.5 2.6c-1.9 1.8-2.8 4.2-2.8 6.6 0 2.3.9 4.6 2.6 6.5 11.4 11.5 41 41.2 43 43.3l.2.2c3.6 3.6 10.3 3.6 13.9 0z"></path></svg></span>
-            <table id="first" class="bus__table table__first" > 
-              <tr  class="bus__top">
+            <table id="first" class="table table__first" > 
+              <tr class="table__top">
                 <th>Город отправления</th>
                 <th>Город прибытия</th>
                 <th>Время отправления</th>
@@ -785,7 +785,7 @@
                 <th>Цена</th>
               </tr><!--bus__top-->
 
-              <tr class="bus__item">
+              <tr class="table__item">
                 <th>Будва</th>
                 <th>Подгорица</th>
                 <th>05:55</th>
@@ -794,7 +794,7 @@
                 <th>5.5€</th>
               </tr><!--bus__top-->
 
-              <tr class="bus__item">
+              <tr class="table__item">
                 <th>Будва</th>
                 <th>Подгорица</th>
                 <th>06:00</th>
@@ -803,7 +803,7 @@
                 <th>5.5€</th>
               </tr><!--bus__top-->
 
-              <tr class="bus__item">
+              <tr class="table__item">
                 <th>Будва</th>
                 <th>Котор</th>
                 <th>07:14</th>
@@ -812,7 +812,7 @@
                 <th>3.5€</th>
               </tr><!--bus__top-->
 
-              <tr class="bus__item">
+              <tr class="table__item">
                 <th>Будва</th>
                 <th>Улцинь</th>
                 <th>07:49</th>
@@ -822,8 +822,8 @@
               </tr><!--bus__top-->
             </table>
             <span id="arrow_second" class="spoiler_arrow second__arrow" onclick="first()"><svg viewBox="-122.9 121.1 105.9 61.9"><path d="M-63.2 180.3l43.5-43.5c1.7-1.7 2.7-4 2.7-6.5s-1-4.8-2.7-6.5c-1.7-1.7-4-2.7-6.5-2.7s-4.8 1-6.5 2.7L-69.9 161l-37.2-37.2c-1.7-1.7-4-2.7-6.5-2.7s-4.8 1-6.5 2.6c-1.9 1.8-2.8 4.2-2.8 6.6 0 2.3.9 4.6 2.6 6.5 11.4 11.5 41 41.2 43 43.3l.2.2c3.6 3.6 10.3 3.6 13.9 0z"></path></svg></span>
-              <table id="second" class="bus__table table__second"> 
-                <tr class="bus__top">
+              <table id="second" class="table table__second"> 
+                <tr class="table__top">
                   <th>Город отправления</th>
                   <th>Город прибытия</th>
                   <th>Время отправления</th>
@@ -832,7 +832,7 @@
                   <th>Цена</th>
                 </tr><!--bus__top-->
 
-                <tr class="bus__item">
+                <tr class="table__item">
                   <th>Будва</th>
                   <th>Подгорица</th>
                   <th>05:55</th>
@@ -841,7 +841,7 @@
                   <th>5.5€</th>
                 </tr><!--bus__top-->
 
-                <tr class="bus__item">
+                <tr class="table__item">
                   <th>Будва</th>
                   <th>Подгорица</th>
                   <th>06:00</th>
@@ -850,7 +850,7 @@
                   <th>5.5€</th>
                 </tr><!--bus__top-->
 
-                <tr class="bus__item">
+                <tr class="table__item">
                   <th>Будва</th>
                   <th>Котор</th>
                   <th>07:14</th>
@@ -859,7 +859,7 @@
                   <th>3.5€</th>
                 </tr><!--bus__top-->
 
-                <tr class="bus__item">
+                <tr class="table__item">
                   <th>Будва</th>
                   <th>Улцинь</th>
                   <th>07:49</th>
@@ -868,7 +868,7 @@
                   <th>—</th>
                 </tr><!--bus__top-->
 
-                <tr class="bus__item">
+                <tr class="table__item">
                   <th>Будва</th>
                   <th>Подгорица</th>
                   <th>11:15</th>
@@ -877,7 +877,7 @@
                   <th>6.5€</th>
                 </tr><!--bus__top-->
               
-                <tr class="bus__item">
+                <tr class="table__item">
                   <th>Будва</th>
                   <th>Бар</th>
                   <th>11:20</th>
@@ -886,7 +886,7 @@
                   <th>4.5€</th>
                 </tr><!--bus__top-->
 
-                <tr class="bus__item">
+                <tr class="table__item">
                   <th>Будва</th>
                   <th>Херцег-Нови</th>
                   <th>11:59</th>
@@ -895,7 +895,7 @@
                   <th>5.5€</th>
                 </tr><!--bus__top-->
 
-                <tr class="bus__item">
+                <tr class="table__item">
                   <th>Будва</th>
                   <th>Бар</th>
                   <th>12:30</th>
@@ -904,7 +904,7 @@
                   <th>4.5€</th>
                 </tr><!--bus__top-->
 
-                <tr class="bus__item">
+                <tr class="table__item">
                   <th>Будва</th>
                   <th>Подгорица</th>
                   <th>12:35</th>
@@ -913,7 +913,7 @@
                   <th>6.5€</th>
                 </tr><!--bus__top-->
 
-                <tr class="bus__item">
+                <tr class="table__item">
                   <th>Будва</th>
                   <th>Херцег-Нови</th>
                   <th>12:50</th>
@@ -922,7 +922,7 @@
                   <th>6.5€</th>
                 </tr><!--bus__top-->
 
-                <tr class="bus__item">
+                <tr class="table__item">
                   <th>Будва</th>
                   <th>Херцег-Нови</th>
                   <th>12:50</th>
@@ -931,7 +931,7 @@
                   <th>6.5€</th>
                 </tr><!--bus__top-->
 
-                <tr class="bus__item">
+                <tr class="table__item">
                   <th>Будва</th>
                   <th>Улцинь</th>
                   <th>12:55</th>
@@ -940,7 +940,7 @@
                   <th>7€</th>
                 </tr><!--bus__top-->
 
-                <tr class="bus__item">
+                <tr class="table__item">
                   <th>Будва</th>
                   <th>Подгорица</th>
                   <th>13:00</th>
@@ -949,7 +949,7 @@
                   <th>7€</th>
                 </tr><!--bus__top-->
 
-                <tr class="bus__item">
+                <tr class="table__item">
                   <th>Будва</th>
                   <th>Никшич</th>
                   <th>13:23</th>
@@ -958,7 +958,7 @@
                   <th>8€</th>
                 </tr><!--bus__top-->
 
-                <tr class="bus__item">
+                <tr class="table__item">
                   <th>Будва</th>
                   <th>Никшич</th>
                   <th>13:23</th>
@@ -987,9 +987,272 @@
           <rssapp-carousel id="TAqqveMzvPOwiEfN"></rssapp-carousel><script src="https://widget.rss.app/v1/carousel.js" type="text/javascript" async></script>
         </div>
       </div>
+
+      <!--Advertising-4
+            =============================
+          -->
+          <div class="advertising-4">
+            <div class="slide">
+              <div class="slide-track">
+                <div class="slides">
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" height="100" width="250" alt="" />
+                </div>
+                <div class="slides">
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100" width="250" alt="" />
+                </div>
+                <div class="slides">
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" height="100" width="250" alt="" />
+                </div>
+                <div class="slides">
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" height="100" width="250" alt="" />
+                </div>
+                <div class="slides">
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" height="100" width="250" alt="" />
+                </div>
+                <div class="slides">
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" height="100" width="250" alt="" />
+                </div>
+                <div class="slides">
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100" width="250" alt="" />
+                </div>
+                <div class="slides">
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" height="100" width="250" alt="" />
+                </div>
+                <div class="slides">
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100" width="250" alt="" />
+                </div>
+                <div class="slides">
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" height="100" width="250" alt="" />
+                </div>
+                <div class="slides">
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" height="100" width="250" alt="" />
+                </div>
+                <div class="slides">
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" height="100" width="250" alt="" />
+                </div>
+                <div class="slides">
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" height="100" width="250" alt="" />
+                </div>
+                <div class="slides">
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100" width="250" alt="" />
+                </div>
+              </div>
+            </div>
+          </div><!--Advertising-4-->
+
         <!--Polyclinics
         =========================-->
-      <div id="polyclinics" class="polyclinics">Медицина</div>
+      <div id="polyclinics" class="polyclinics">
+
+        <div class="titles">
+          <h3 class="title__item">Медицина</h3>
+        </div>
+        <div class="med__col">
+          <span id="medarrow" class="spoiler_arrow" onclick="med__second()"><svg viewBox="-122.9 121.1 105.9 61.9"><path d="M-63.2 180.3l43.5-43.5c1.7-1.7 2.7-4 2.7-6.5s-1-4.8-2.7-6.5c-1.7-1.7-4-2.7-6.5-2.7s-4.8 1-6.5 2.7L-69.9 161l-37.2-37.2c-1.7-1.7-4-2.7-6.5-2.7s-4.8 1-6.5 2.6c-1.9 1.8-2.8 4.2-2.8 6.6 0 2.3.9 4.6 2.6 6.5 11.4 11.5 41 41.2 43 43.3l.2.2c3.6 3.6 10.3 3.6 13.9 0z"></path></svg></span>
+
+          <table id="med__first" class="table table__first">
+            <thead>
+              <tr class="table__top">
+                <th>Название медецинской организации</th>
+                <th>Номер</th>
+                <th>Адрес</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th><a rel="external" href="http://www.kccg.me" target="_blank">Clinical Centre of Montenegro- Klinički centar Crne Gore</a></th>
+                <th>382 (0)20 412 412</th>
+                <th>Ljubljanska bb, Podgorica</th>
+              </tr>
+              <tr>
+                <th><a rel="external" href="https://domzdravljaandrijevica.me" target="_blank">Primary Health Care Centre Andrijevica - Dom zdravlja Andrijevica</a></th>
+                <th>382 (0)51 243 407</th>
+                <th>Branka Deletića bb, Andrijevica</th>
+              </tr>
+              <tr>
+                <th><a rel="external" href="http://www.bolnicabar.me" target="_blank">General Hospital Bar - Opšta bolnica “Blažo Orlandić” Bar</a></th>
+                <th>382 (0)30 342 333</th>
+                <th>Podgrad bb, Stari Bar, Bar</th>
+              </tr>
+              <tr>
+                <th><a rel="external" href="http://www.domzdravljabar.com" target="_blank">Primary Health Care Centre Bar - Dom zdravlja Bar</a></th>
+                <th>382 (0)30 311 001</th>
+                <th>Jovana Tomaševića 42, Bar</th>
+              </tr>
+            </tbody>
+          </table>
+
+
+          <span id="medarrow_second" class="spoiler_arrow second__arrow" onclick="med__first()"><svg viewBox="-122.9 121.1 105.9 61.9"><path d="M-63.2 180.3l43.5-43.5c1.7-1.7 2.7-4 2.7-6.5s-1-4.8-2.7-6.5c-1.7-1.7-4-2.7-6.5-2.7s-4.8 1-6.5 2.7L-69.9 161l-37.2-37.2c-1.7-1.7-4-2.7-6.5-2.7s-4.8 1-6.5 2.6c-1.9 1.8-2.8 4.2-2.8 6.6 0 2.3.9 4.6 2.6 6.5 11.4 11.5 41 41.2 43 43.3l.2.2c3.6 3.6 10.3 3.6 13.9 0z"></path></svg></span>
+          <table id="med__second" class="table table__second">
+            <thead>
+              <tr class="table__top">
+                <th>Название медецинской организации</th>
+                <th>Номер</th>
+                <th>Адрес</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th><a rel="external" href="http://www.kccg.me" target="_blank">Clinical Centre of Montenegro- Klinički centar Crne Gore</a></th>
+                <th>382 (0)20 412 412</th>
+                <th>Ljubljanska bb, Podgorica</th>
+              </tr>
+              <tr>
+                <th><a rel="external" href="https://domzdravljaandrijevica.me" target="_blank">Primary Health Care Centre Andrijevica - Dom zdravlja Andrijevica</a></th>
+                <th>382 (0)51 243 407</th>
+                <th>Branka Deletića bb, Andrijevica</th>
+              </tr>
+              <tr>
+                <th><a rel="external" href="http://www.bolnicabar.me" target="_blank">General Hospital Bar - Opšta bolnica “Blažo Orlandić” Bar</a></th>
+                <th>382 (0)30 342 333</th>
+                <th>Podgrad bb, Stari Bar, Bar</th>
+              </tr>
+              <tr>
+                <th><a rel="external" href="http://www.domzdravljabar.com" target="_blank">Primary Health Care Centre Bar - Dom zdravlja Bar</a></th>
+                <th>382 (0)30 311 001</th>
+                <th>Jovana Tomaševića 42, Bar</th>
+              </tr>
+              <tr>
+                <th><a rel="external" href="http://bolnicaberane.com" target="_blank">General Hospital Berane - Opšta bolnica Berane</a></th>
+                <th>382 (0)51 230 630</th>
+                <th>Svetosavska 33, Berane</th>
+              </tr>
+              <tr>
+                <th><a rel="external" href="http://www.domzdravljaberane.me" target="_blank">Primary Health Care Centre Berane - Dom zdravlja Berane</a></th>
+                <th>382 (0)51 233 325</th>
+                <th>Miljana Tomičića bb, Berane</th>
+              </tr>
+              <tr>
+                <th><a rel="external" href="http://www.bpbolnica.me" target="_blank">General Hospital Bijelo Polje - Opšta bolnica Bijelo Polje</a></th>
+                <th>382 (0)50 486 105</th>
+                <th>Medanovića bb, Bijelo Polje</th>
+              </tr>
+              <tr>
+                <th><a rel="external" href="http://domzdravljabp.me" target="_blank">Primary Health Care Centre Bijelo Polje - Dom zdravlja Bijelo Polje</a></th>
+                <th>382 (0)50 432 327</th>
+                <th>Voja Lješnjaka bb, Bijelo Polje</th>
+              </tr>
+              <tr>
+                <th><a rel="external" href="http://www.dzbudva.com" target="_blank">Primary Health Care Centre Budva - Dom zdravlja Budva</a></th>
+                <th>382 (0)33 427 200</th>
+                <th>Popa Jola Zeca, Budva</th>
+              </tr>
+              <tr>
+                <th><a rel="external" href="http://daniloprvi.me" target="_blank">General Hospital Cetinje - Opšta bolnica “Danilo I” Cetinje</a></th>
+                <th>382 (0)41 231 336</th>
+                <th>Vuka Mićunovića bb, Cetinje</th>
+              </tr>
+              <tr>
+                <th><a rel="external" href="http://www.dzcetinje.me/index.php/srp" target="_blank">Primary Health Care Centre Cetinje- Dom zdravlja Cetinje</a></th>
+                <th>382 (0)41 231 379</th>
+                <th>Vuka Mićunovića bb, Cetinje</th>
+              </tr>
+              <tr>
+                <th><a rel="external" href="http://www.domzdravljadg.me" target="_blank">Primary Health Care Centre Danilovgrad- Dom zdravlja Danilovgrad</a></th>
+                <th>382 (0)20 812 106</th>
+                <th>Prve bokeške bb, Danilovgrad</th>
+              </tr>
+              <tr>
+                <th><a rel="external" href="http://domzdravljahn.me/" target="_blank">Primary Health Care Centre Herceg Novi - Dom zdravlja Herceg Novi</a></th>
+                <th>382 (0)31 343 111</th>
+                <th>Nikole Ljubibratića 1, Herceg Novi</th>
+              </tr>
+              <tr>
+                <th><a rel="external" href="http://www.dzkolasin.me/" target="_blank">Primary Health Care Centre Kolašin - Dom zdravlja Kolašin</a></th>
+                <th>382 (0)20 865 140</th>
+                <th>Dunje Đokić bb, Kolašin</th>
+              </tr>
+              <tr>
+                <th><a rel="external" href="http://www.jzuobkotor.me" target="_blank">General Hospital Kotor- Opšta bolnica Kotor</a></th>
+                <th>382 (0)32 325 602</th>
+                <th>Škaljari bb, Kotor</th>
+              </tr>
+              <tr>
+                <th><a rel="external" href="http://www.psihijatrijakotor.me/mn/" target="_blank">Special Hospital for Psychiatry Kotor- Specijalna bolnica za psihijatriju Kotor</a></th>
+                <th>382 (0)32 330 920</th>
+                <th>Dobrota bb, Kotor</th>
+              </tr>
+              <tr>
+                <th><a rel="external" href="http://www.dzkotor.me/" target="_blank">Primary Health Care Centre Kotor - Dom zdravlja Kotor</a></th>
+                <th>382 (0)32 334 533</th>
+                <th>Dobrota bb, Kotor</th>
+              </tr>
+              <tr>
+                <th><a rel="external" href="https://www.bolnicarisan.me/" target="_blank">Special Hospital for Orthopaedics, Neurosurgery and Neurology “Vaso Ćuković” Risan  - Specijalna bolnica za ortopediju, neurohirurgiju i neurologiju “Vaso Ćuković” Risan</a></th>
+                <th>382 (0)32 371 099</th>
+                <th>Risan</th>
+              </tr>
+              <tr>
+                <th><a rel="external" href="http://www.dzmojkovac.me" target="_blank">Primary Health Care Centre Mojkovac - Dom zdravlja Mojkovac</a></th>
+                <th>382 (0)50 472 165</th>
+                <th>Njegoševa bb, Mojkovac</th>
+              </tr>
+              <tr>
+                <th><a rel="external" href="https://www.bolnica-nk.com/web/opste-informacije/" target="_blank">General Hospital Nikšić+A2- Opšta bolnica Nikšić</a></th>
+                <th>382 (0)40 231 111</th>
+                <th>Nikca od Rovina bb, Nikšić</th>
+              </tr>
+              <tr>
+                <th>Special Hospital for Pulmonary diseases “dr Jovan Bulajić”- Specijalna bolnica za plućne bolesti “dr Jovan Bulajić”</th>
+                <th>382 (0)40 217 011</th>
+                <th>Brezovik, Nikšić</th>
+              </tr>
+              <tr>
+                <th><a rel="external" href="http://www.dzniksic.com" target="_blank">Primary Health Care Centre Nikšić - Dom zdravlja Nikšić</a></th>
+                <th>382 (0)40 231 202</th>
+                <th>Dr Nika Miljanića bb, Nikšić</th>
+              </tr>
+              <tr>
+                <th><a rel="external" href="http://www.dzplav.me" target="_blank">Primary Health Care Centre Plav - Dom zdravlja Plav</a></th>
+                <th>382 0800 81 4400</th>
+                <th>Hridska bb, Plav</th>
+              </tr>
+              <tr>
+                <th><a rel="external" href="http://www.bolnicapv.com" target="_blank">General Hospital Pljevlja- Opšta bolnica Pljevlja</a></th>
+                <th>382 (0)52 300 168</th>
+                <th>Lovćenskog bataljona bb, Pljevlja</th>
+              </tr>
+              <tr>
+                <th><a rel="external" href="http://www.dzpljevlja.me" target="_blank">Primary Health Care Centre Pljevlja - Dom zdravlja Pljevlja</a></th>
+                <th>382 (0)52 321 193</th>
+                <th>Lovćenskog bataljona bb, Pljevlja</th>
+              </tr>
+              <tr>
+                <th>Health Unit Žabljak - Zdravstvena stanica Žabljak</th>
+                <th>382 (0)67 613 158</th>
+                <th>Zdravstvena stanica bb, Žabljak</th>
+              </tr>
+              <tr>
+                <th><a href="www.dzpg.me" target="_blank">Primary Health Care Centre Podgorica - Dom zdravlja Podgorica</a></th>
+                <th>382 (0)20 481 900</th>
+                <th>Trg Nikole Kovačevića 6, Podgorica</th>
+              </tr>
+              <tr>
+                <th><a rel="external" href="http://www.jukakarickagora.podgorica.me/o-nama" target="_blank">Centre for accommodation, rehabilitation and resocialisation of psychoactive substances users Kakaricka gora</a></th>
+                <th>382 (0)20 611 847</th>
+                <th>Kakaricka gora, Podgorica</th>
+              </tr>
+              <tr>
+                <th><a rel="external" href="http://www.dzrozaje.me" target="_blank">Primary Health Care Centre Rožaje - Dom zdravlja Rožaje</a></th>
+                <th>382 (0)51 273 676</th>
+                <th>29 novembra bb, Rožaje</th>
+              </tr>
+              <tr>
+                <th><a rel="external" href="https://www.dztivat.com" target="_blank">Primary Health Care Centre Tivat - Dom zdravlja Tivat</a></th>
+                <th>382 (0)32 671 774</th>
+                <th>Park bb, Tivat</th>
+              </tr>
+              <tr>
+                <th><a rel="external" href="https://www.domzdravljaulcinj.me" target="_blank">Primary Health Care Centre Ulcinj - Dom zdravlja Ulcinj</a></th>
+                <th>382 (0)30 412 433</th>
+                <th>Majke Tereze bb, Ulcinj</th>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
 
           <!--Job
         =========================-->

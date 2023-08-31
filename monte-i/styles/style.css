@@ -56,8 +56,8 @@ a:hover{
 
 
 table {
-    border-collapse: collapse;
-    border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 body{
   background-color: #fff;
@@ -68,18 +68,16 @@ body{
 .titles{
   width: 100%;
   margin-bottom: 10px;
-  border-style: solid;
-  border-width: 1px;
   border-radius: 10px;
-  border-color: #e1e1e1 #e1e1e1 #bfbfbf #bfbfbf;
-  background: #f1f1f1 url(data:image/gif;base64,R0lGODlhAQAaAIAAAPHx8fn5+SH5BAAAAAAALAAAAAABABoAAAIGjI8Iy70FADs=) repeat-x;
+  background: #f1f1f1 repeat-x;
 }
 
 .title__item{
+  cursor: pointer;
   font-size: 14pt;
   font-weight: 500;
   color: #333;
-  padding-left: 5px;
+  padding: 3px 5px;
 }
 
 .container{
@@ -183,6 +181,7 @@ body{
   "advertising food advertising-2"
   "advertising poster  advertising-2"
   "advertising transport advertising-2"
+  "advertising advertising-4  advertising-2"
   "advertising polyclinics advertising-2"
   "advertising job advertising-2";
 }
@@ -233,6 +232,14 @@ body{
 
 .advertising-2{
   grid-area: advertising-2;
+}
+
+.advertising-3{
+  grid-area: advertising-3;
+}
+
+.advertising-4{
+  grid-area: advertising-4;
 }
 
 .navigation__left{
@@ -425,6 +432,11 @@ height: 100%;
 }
 /*Job
 ====================================*/
+
+.job{
+margin-bottom: 100px;
+}
+
 .vacancies{
   margin-left: 20px;
   border-bottom: 2px solid #fff;
@@ -480,24 +492,24 @@ th{
   padding: 12px 8px;
 }
 
-.bus__table{
+.table{
   width: 100%;
   font-size: 14pt;
   text-transform: uppercase;
 }
-.bus__table tr:hover{
+.table tr:hover{
   background-color: #f4f4f4;
 }
-.bus__top {
+.table__top {
   font-weight: 600;
   background-color: #f35e49;
   color: #fff;
 }
 
-.bus__table .bus__top:hover{
+.table .table__top:hover{
   background-color: #f35e49;
 }
-.bus__item{ 
+.table tr{ 
   cursor: pointer;
 }
 
@@ -529,6 +541,16 @@ th{
   display: none;
   cursor: pointer;
 }
+
+
+/* Medicine
+================================= */
+
+
+td{
+  padding: 12px 8px;
+}
+
 
 
 
