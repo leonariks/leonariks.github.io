@@ -82,7 +82,7 @@ body{
 }
 
 .container{
-  max-width: 1200px;
+  max-width: 1230px;
   margin: 0 auto;
   overflow: hidden;
 }
@@ -141,18 +141,15 @@ body{
   padding-left: 10px;
 }
 
-
-
-
 .main{
   display: grid;
   padding: 70px 5px 20px;
-  grid-template-columns: 15% 880px 15%;
+  grid-template-columns: 15% 880px 10%;
   grid-template-rows: 1fr;
 	grid-gap: 20px 10px;
 	grid-template-areas:
-  "navigation__left search advertising-2"
-  "advertising news advertising-2"
+
+  "navigation__left news advertising-2"
 	"advertising weather advertising-2"
   "advertising banks advertising-2"
   "advertising car advertising-2"
@@ -242,19 +239,19 @@ body{
 }
 
 .search__input, .search__btn{
-  height: 30px;
+  height:30px;
 }
 
 .search__input{
   width: 100%; 
-  border: solid 1px #ccc;
+  border: 2px solid #ccc;
   border-radius: 10px;
   box-shadow: 0 1px 3px #eee inset;
   padding: 4px;
 }
 
 .search__input:focus{
-  border: solid 2px #f35e49;
+  border: 2px solid #f35e49;
 } 
 
 .search__btn-cell{
@@ -263,15 +260,20 @@ body{
 }
 
 .search__btn{
+  font-weight: 700;
+  font-size: 11pt;
   margin-left: -35%;
-  border: 1px solid #ccc;
+  border: 2px solid #f35e49;
   border-radius: 10px;
-  border-bottom-color: #b3b3b3;
   cursor: pointer;
+  color: #fff;
+  background-color: #f35e49;
+  transition: .3s;
 }
 
 .search__btn:hover{
-  border-color: #f35e49;
+  border: 2px solid #a93f31;
+  background-color: #a93f31;
 }
 /* News
 =================================*/

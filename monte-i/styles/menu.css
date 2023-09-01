@@ -15,12 +15,12 @@
   padding-top: 80px;
   list-style: none;
   background-color: #fff;
-  transition-duration: .25s;
+  transition-duration: .4s;
 }
  
 .menu-item{
   display: block;
-  transition-duration: .25s;
+  transition-duration: .3s;
   font-weight: 500;
 }
 
@@ -75,6 +75,11 @@
   height: 26px;
   cursor: pointer;
   z-index: 120;
+  background-color: #fff;
+  border: 2px solid #fff;
+  border-left: 3px solid #fff;
+  border-right: 3px solid #fff;
+  border-radius: 5px
 }
  .menu_name{
   margin-left: 15px;
@@ -92,7 +97,7 @@
   width: 100%;
   height: 3px;
   background-color: #f35e49;
-  transition-duration: .25s;
+  transition-duration: .4s;
 }
 .menu-btn > span::before {
   content: '';
@@ -123,6 +128,5 @@
   top: 5%;
 }
 
-/*==========================*/
 
  
