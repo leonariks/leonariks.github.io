@@ -82,7 +82,7 @@ body{
 }
 
 .container{
-  max-width: 1230px;
+  max-width: 1330px;
   margin: 0 auto;
   overflow: hidden;
 }
@@ -90,8 +90,8 @@ body{
 .head{
   position: fixed;
   width: 100%; 
-  align-items:baseline;
   height: 60px;
+  align-items:baseline;
   background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAA3CAIAAABCVLduAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAADlJREFUeNq8w7cNwDAQBDDtP+/naPgKNe5NgGd3z19n5rO7saowM++IQHe/zQxV9RYRZGYkovcjwABh2qKRbrB2/gAAAABJRU5ErkJggg==) repeat-x;
   z-index: 100;
 }
@@ -109,17 +109,6 @@ body{
   color: #f35e49;
   cursor: pointer;
 }
-
-.time{
-  color: #333;
-  font-size: 12pt;
-  font-weight: 500;
-  padding-top: 18px;
-  margin-left: 25%;
-  cursor: pointer;
-  z-index: 200;
-}
-
 
 /* Navig
 =================================*/
@@ -141,10 +130,13 @@ body{
   padding-left: 10px;
 }
 
+#top{
+}
+
 .main{
   display: grid;
   padding: 70px 5px 20px;
-  grid-template-columns: 15% 880px 10%;
+  grid-template-columns: 18% 880px 14%;
   grid-template-rows: 1fr;
 	grid-gap: 20px 10px;
 	grid-template-areas:
@@ -162,6 +154,7 @@ body{
   "advertising advertising-4  advertising-2"
   "advertising polyclinics advertising-2"
   "advertising job advertising-2"
+  "advertising school advertising-2"
   "footer footer footer";
 }
 
