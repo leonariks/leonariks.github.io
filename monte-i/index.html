@@ -23,6 +23,7 @@
   <script src="javascript/realties.js"></script>
   <script src="javascript/transport.js"></script>
   <script src="javascript/spoiler.js"></script>
+  <script src="javascript/school.js"></script>
 
 </head>
 
@@ -1498,18 +1499,103 @@
           <h2 class="section__title">
             <a href="">Школы</a></h2>
           <div class="section__items">
-            <a id="school_state" class="section__item" onclick="">Государственные</a>
+            <a id="school_state" class="section__item" onclick="state()">Государственные</a>
             <a id="school_private"
-            class="section__item">Частные</a>
+            class="section__item" onclick="private()">Частные</a>
             <a id="school_lang" 
-            class="section__item" onclick="">Языковые</a>
-            
+            class="section__item" onclick="langua()" >Языковые</a>           
           </div>
         </div><!--section_header-->
 
-        <!--Rent
+        <!--State
           =============================-->
-          <div class="slider__display school__display">
+          <div id="state__disp" class="slider__display school__display state__disp">
+            <div class="sliders school__sliders">
+
+              <div class="slider">
+                <a class="slider__link" href="https://www.gov.me/mps" target="_blank"></a>
+                <div class="slider__picture slider__school">
+                    <h3>Перейти на сайт школы</h3>
+                  <img src="img/school/state.jpeg" alt="">
+                </div>
+                <div class="slider__desc">
+                  <h3>Vlado Milic Elementary School</h3>
+                  <p>Местный язык</p>
+                  <p>Начальные классы</p>
+                </div>
+              </div><!--Slider-->
+
+              <div class="slider">
+                <a class="slider__link" href="https://www.gov.me/mps" target="_blank"></a>
+                <div class="slider__picture slider__school">
+                    <h3>Перейти на сайт школы</h3>
+                  <img src="img/school/state.jpeg" alt="">
+                </div>
+                <div class="slider__desc">
+                  <h3>Vlado Milic Elementary School</h3>
+                  <p>Местный язык</p>
+                  <p>Начальные классы</p>
+                </div>
+              </div><!--Slider-->
+
+              <div class="slider">
+                <a class="slider__link" href="https://www.gov.me/mps" target="_blank"></a>
+                <div class="slider__picture slider__school">
+                    <h3>Перейти на сайт школы</h3>
+                  <img src="img/school/state.jpeg" alt="">
+                </div>
+                <div class="slider__desc">
+                  <h3>Vlado Milic Elementary School</h3>
+                  <p>Местный язык</p>
+                  <p>Начальные классы</p>
+                </div>
+              </div><!--Slider-->
+
+              <div class="slider">
+                <a class="slider__link" href="https://www.gov.me/mps" target="_blank"></a>
+                <div class="slider__picture slider__school">
+                    <h3>Перейти на сайт школы</h3>
+                  <img src="img/school/state.jpeg" alt="">
+                </div>
+                <div class="slider__desc">
+                  <h3>Vlado Milic Elementary School</h3>
+                  <p>Местный язык</p>
+                  <p>Начальные классы</p>
+                </div>
+              </div><!--Slider-->
+
+              <div class="slider">
+                <a class="slider__link" href="https://www.gov.me/mps" target="_blank"></a>
+                <div class="slider__picture slider__school">
+                    <h3>Перейти на сайт школы</h3>
+                  <img src="img/school/state.jpeg" alt="">
+                </div>
+                <div class="slider__desc">
+                  <h3>Vlado Milic Elementary School</h3>
+                  <p>Местный язык</p>
+                  <p>Начальные классы</p>
+                </div>
+              </div><!--Slider-->
+
+              <div class="slider">
+                <a class="slider__link" href="https://www.gov.me/mps" target="_blank"></a>
+                <div class="slider__picture slider__school">
+                    <h3>Перейти на сайт школы</h3>
+                  <img src="img/school/state.jpeg" alt="">
+                </div>
+                <div class="slider__desc">
+                  <h3>Vlado Milic Elementary School</h3>
+                  <p>Местный язык</p>
+                  <p>Начальные классы</p>
+                </div>
+              </div><!--Slider-->
+
+            </div><!--Sliders-->
+          </div><!--slider__display-->
+
+        <!--Private
+          =============================-->
+          <div id="private__disp" class="slider__display school__display private__disp">
             <div class="sliders school__sliders">
 
               <div class="slider">
@@ -1591,7 +1677,93 @@
               </div><!--Slider-->
 
             </div><!--Sliders-->
-          </div>
+          </div><!--slider__display-->
+
+          <!--lang
+          =============================-->
+          <div id="lang__disp" class="slider__display school__display lang__disp">
+            <div class="sliders school__sliders">
+
+              <div class="slider">
+                <a class="slider__link" href="https://lingua-lab.com/" target="_blank"></a>
+                <div class="slider__picture slider__school">
+                    <h3>Перейти на сайт школы</h3>
+                  <img src="img/school/lang.jpeg" alt="">
+                </div>
+                <div class="slider__desc">
+                  <h3>Lingualab</h3>
+                  <p>Английский язык</p>
+                  <p>Дети и подростки</p>
+                </div>
+              </div><!--Slider-->
+
+              <div class="slider">
+                <a class="slider__link" href="https://lingua-lab.com/" target="_blank"></a>
+                <div class="slider__picture slider__school">
+                    <h3>Перейти на сайт школы</h3>
+                    <img src="img/school/lang.jpeg" alt="">
+                </div>
+                <div class="slider__desc">
+                  <h3>Lingualab</h3>
+                  <p>Английский язык</p>
+                  <p>Дети и подростки</p>
+                </div>
+              </div><!--Slider-->
+
+              <div class="slider">
+                <a class="slider__link" href="https://lingua-lab.com/" target="_blank"></a>
+                <div class="slider__picture slider__school">
+                    <h3>Перейти на сайт школы</h3>
+                    <img src="img/school/lang.jpeg" alt="">
+                </div>
+                <div class="slider__desc">
+                  <h3>Lingualab</h3>
+                  <p>Английский язык</p>
+                  <p>Дети и подростки</p>
+                </div>
+              </div><!--Slider-->
+
+              <div class="slider">
+                <a class="slider__link" href="https://lingua-lab.com/" target="_blank"></a>
+                <div class="slider__picture slider__school">
+                    <h3>Перейти на сайт школы</h3>
+                    <img src="img/school/lang.jpeg" alt="">
+                </div>
+                <div class="slider__desc">
+                  <h3>Lingualab</h3>
+                  <p>Английский язык</p>
+                  <p>Дети и подростки</p>
+                </div>
+              </div><!--Slider-->
+
+              <div class="slider">
+                <a class="slider__link" href="https://lingua-lab.com/" target="_blank"></a>
+                <div class="slider__picture slider__school">
+                    <h3>Перейти на сайт школы</h3>
+                    <img src="img/school/lang.jpeg" alt="">
+                </div>
+                <div class="slider__desc">
+                  <h3>Lingualab</h3>
+                  <p>Английский язык</p>
+                  <p>Дети и подростки</p>
+                </div>
+              </div><!--Slider-->
+
+              <div class="slider">
+                <a class="slider__link" href="https://lingua-lab.com/" target="_blank"></a>
+                <div class="slider__picture slider__school">
+                    <h3>Перейти на сайт школы</h3>
+                    <img src="img/school/lang.jpeg" alt="">
+                </div>
+                <div class="slider__desc">
+                  <h3>Lingualab</h3>
+                  <p>Английский язык</p>
+                  <p>Дети и подростки</p>
+                </div>
+              </div><!--Slider-->
+
+            </div><!--Sliders-->
+          </div><!--slider__display-->
 
       </div>
 

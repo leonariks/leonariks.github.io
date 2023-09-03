@@ -13,17 +13,19 @@
   height: 120px;
   position: absolute;
   width: 80px;
-  z-index: 5;
+  z-index: 50;
 }
 
 .school__display::before,
 .school__display::after{
-  height: 200px;
+  height: 220px;
 }
 
 
 .slider__display::after{
+  background: linear-gradient(to right, white 10%, rgba(255, 255, 255, 0) 100%);
   right: 0;
+  top: 0;
   transform: rotateZ(180deg);
 }
 
@@ -118,7 +120,7 @@
   border: 0;
   border-radius: 50%;
   padding: 3px 10px;
-  z-index: 10;
+  z-index: 55;
   opacity: .4;
   transition: .4s;
 }
@@ -140,4 +142,16 @@
 .sliders .slick-next {
   right: -0.5%;
   top: 40%;
+}
+
+.state__disp{
+  display: block;
+}
+
+.private__disp{
+  display: none;
+}
+
+.lang__disp{
+  display: none;
 }
