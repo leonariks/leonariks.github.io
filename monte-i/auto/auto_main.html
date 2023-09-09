@@ -72,7 +72,86 @@
               </a>
             </nav>
             <hr class="line">
+            <div class="category__title">
+              <h1>Выберите марку и характеристики АВТО</h1>
+            </div>
           </div><!--category__section-->
+
+          <div class="auto__search">
+            <div class="search__item">
+              <div class="search__wripper">
+
+                <div class="search__widget">
+                  <div class="widget">
+                    <label for="brand_id">Марка</label>
+                    <select class="widget__opt" name="brand" id="brand_id">
+                      <option value="">---</option>
+                      <option value="">Alfa Romeo</option>
+                    </select>
+                  </div>
+                </div><!--Brand-->
+
+                <div class="search__widget">
+                  <div class="widget">
+                    <label for="model_id">Модель</label>
+                    <select class="widget__opt" name="model" id="model_id">
+                      <option  value="">---</option>
+                      <option value="1">Land Cruiser</option>
+                    </select>
+                  </div>
+                </div><!--Model-->
+
+                <div class="search__widget">
+                  <div class="widget">
+                    <label for="carcase_id">Кузов</label>
+                    <select class="widget__opt" name="carcase" id="carcase_id">
+                      <option  value="">---</option>
+                      <option value="1">Внедорожник</option>
+                    </select>
+                  </div>
+                </div><!--carcase-->
+
+                <div class="search__widget">
+                  <div class="widget">
+                    <label for="date_id">Год выпуска</label>
+                    <div>
+                      <div class="awesomplete">
+                        <select class="widget__opt" name="carcase" id="carcase_id">
+                          <option  value="">---</option>
+                          <option value="1">2000</option>
+                        </select>
+                      </div><!--awesomplete-->
+                      <div class="awesomplete">
+                        <select class="widget__opt" name="carcase" id="carcase_id">
+                          <option  value="">---</option>
+                          <option value="1">2023</option>
+                        </select>
+                      </div><!--awesomplete-->
+                    </div>
+                  </div>
+                </div><!--carcase-->
+
+                <div class="search__widget">
+                  <div class="widget">
+                    <label for="carcase_id">Цена</label>
+                    <div class="price_input">
+                      <div class="awesomplete">
+                        <input placeholder="От" id="carcase_id" class="widget__opt">
+                        <ul role="listbox">
+                          <li></li>
+                        </ul>
+                      </div>
+                      <div class="awesomplete">
+                        <input placeholder="До"  id="carcase_id" class="widget__opt awesomplete">
+                      </div>
+                    </div>
+                  </div>
+                </div><!--carcase-->
+                
+              </div><!--search__wripper-->
+            </div><!--search__item-->
+
+          </div><!--auto_search-->
 
         </div><!--filter__block-->
       </div><!--filter-->

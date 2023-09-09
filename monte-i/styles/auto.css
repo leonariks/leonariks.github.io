@@ -10,7 +10,7 @@
 }
 
 .navig__ul{
-  font-size: 16pt;
+  font-size: 14pt;
   font-weight: 500;
 }
 
@@ -30,7 +30,7 @@
   padding: 12px 33px;
   color: #fff;
   font-weight: 700;
-  font-size: 16pt;
+  font-size: 14pt;
   background-color: #f35e49;
   border: 0;
   border-radius: 5px;
@@ -73,7 +73,12 @@
 ================================*/
 
 .filter{
-
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin: 15px;
+  -webkit-box-shadow: 0px 0px 20px -8px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 20px -8px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 13px -6px rgba(0,0,0,0.75);
 }
 
 .categories{
@@ -90,4 +95,63 @@
 .auto__item{
   color: #f35e49;
   border-bottom: 3px solid #f35e49;
+}
+
+.category__title{
+  margin: 25px;
+  font-size: 18pt;
+  font-weight: 400;
+}
+
+.auto__search{
+  display: flex;
+}
+
+.search__wripper{
+  display: flex;
+}
+
+.search__item{
+  
+}
+
+.auto__search{
+
+}
+
+label {
+  vertical-align: top;
+}
+
+.search__widget{
+  margin-bottom: 1em;
+  padding-right: 0.8rem;
+}
+
+.widget{
+  display: flex;
+  flex-direction: column;
+}
+
+.widget label{
+  padding: 8px 2px;
+  font-size: 13pt;
+  font-weight: 400;
+}
+
+.widget__opt{
+  font-size: 12pt;
+  padding: 0.4em 0.6em;
+}
+
+.select:active{
+  border: 1px solid #f35e49;
+}
+
+.awesomplete {
+  float: left;
+}
+
+.price_input input{
+  width: 100px;
 }
