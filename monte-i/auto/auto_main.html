@@ -8,6 +8,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700&family=Source+Serif+4:opsz@8..60&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../styles/reset.css">
   <link rel="stylesheet" href="../styles/auto.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/css/select2.min.css" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/js/select2.min.js"></script>
   <title>Monte-i.com AUTO</title>
 </head>
 <body>
@@ -79,60 +82,73 @@
 
           <div class="auto__search">
 
+            <!--search__main
+            ===========================-->
+
             <div class="search__main">
               <div class="search__wripper">
 
-                <div class="search__widget">
+                <div class="search__widget widget__small">
                   <div class="widget">
                     <label for="brand_id">Марка</label>
-                    <select class="widget__input" name="brand" id="brand_id">
-                      <option value="">---</option>
-                      <option value="">Alfa Romeo</option>
-                    </select>
+                    <div class="select-wrap">
+                      <select class="widget__input js-select" name="brand" id="brand_id">
+                        <option value="">- - -</option>
+                        <option value="">Toyota</option>
+                      </select>
+                    </div>
                   </div>
                 </div><!--Brand-->
 
-                <div class="search__widget">
+                <div class="search__widget widget__small">
                   <div class="widget">
                     <label for="model_id">Модель</label>
-                    <select class="widget__input" name="model" id="model_id">
-                      <option  value="">---</option>
-                      <option value="1">Land Cruiser</option>
-                    </select>
+                    <div class="select-wrap">
+                      <select class="widget__input js-select" name="model" id="model_id">
+                        <option  value="">- - -</option>
+                        <option value="1">Land Cruiser</option>
+                      </select>
+                    </div>
                   </div>
                 </div><!--Model-->
 
-                <div class="search__widget">
+                <div class="search__widget widget__small">
                   <div class="widget">
                     <label for="carcase_id">Кузов</label>
-                    <select class="widget__input" name="carcase" id="carcase_id">
-                      <option  value="">---</option>
-                      <option value="1">Внедорожник</option>
-                    </select>
+                    <div class="select-wrap">
+                      <select class="widget__input js-select" name="carcase" id="carcase_id">
+                        <option  value="">- - -</option>
+                        <option value="1">Внедорожник</option>
+                      </select>
+                    </div>
                   </div>
                 </div><!--carcase-->
 
-                <div class="search__widget">
+                <div class="search__widget widget__big">
                   <div class="widget">
-                    <label for="date_id">Год выпуска</label>
+                    <label for="dates_id">Год выпуска</label>
                     <div>
                       <div class="awesomplete">
-                        <select class="widget__input widget-input_left" name="carcase" id="carcase_id">
-                          <option  value="">---</option>
-                          <option value="1">2000</option>
-                        </select>
+                        <div class="select-wrap select-wrap_left">
+                          <select class="widget__input widget-input_left js-select" name="dates" id="dates_id">
+                            <option  value="">- - -</option>
+                            <option value="1">2000</option>
+                          </select>
+                        </div>
                       </div><!--awesomplete-->
                       <div class="awesomplete">
-                        <select class="widget__input widget-input_right" name="carcase" id="carcase_id">
-                          <option  value="">---</option>
-                          <option value="1">2023</option>
-                        </select>
+                        <div class="select-wrap select-wrap_right">
+                          <select class="widget__input widget-input_right js-select" name="dates">
+                            <option  value="">- - -</option>
+                            <option value="1">2023</option>
+                          </select>
+                        </div><!--select-wrap-->
                       </div><!--awesomplete-->
                     </div>
                   </div>
                 </div><!--date-->
 
-                <div class="search__widget">
+                <div class="search__widget widget__big">
                   <div class="widget">
                     <label for="price_id">Цена</label>
                     <div class="input__search">
@@ -155,7 +171,8 @@
 
             <div class="extra__search">
               <div class="extras">
-                <div class="search__widget">
+
+                <div class="search__widget widget__small">
                   <div class="widget">
                     <label for="power_id">Мощность</label>
                     <div class="input__search">
@@ -167,12 +184,65 @@
                       </div>
                     </div>
                   </div>
-                </div><!--search__widget-->
+                </div><!--power-->
+
+                <div class="search__widget widget__big">
+                  <div class="widget">
+                    <label for="value_id">Объем, см<sup>3</sup></label>
+                    <div class="input__search">
+                      <div class="awesomplete">
+                        <input placeholder="От, л.с." id="value_id" class="widget__input widget-input_left" role="combobox" min="0">
+                      </div>
+                      <div class="awesomplete">
+                        <input placeholder="До, л.с."  id="value_id" class="widget__input awesomplete widget-input_right" role="combobox" min="0">
+                      </div>
+                    </div>
+                  </div>
+                </div><!--value-->
+
+                <div class="search__widget widget__small">
+                  <div class="widget">
+                    <label for="fuel_id">Тип топлива</label>
+                    <div class="select-wrap">
+                      <select class="widget__input select_widget js-select" name="fuel" id="fuel_id">
+                        <option  value="">- - -</option>
+                        <option value="1">Бензин</option>
+                      </select>
+                    </div>
+                  </div>
+                </div><!--fuel-->
+
+                <div class="search__widget widget__small">
+                  <div class="widget">
+                    <label for="gearbox_id">КПП</label>
+                    <div class="select-wrap">
+                      <select class="widget__input select_widget js-select" name="gearbox" id="gearbox_id">
+                        <option  value="">- - -</option>
+                        <option value="1">Автомат</option>
+                      </select>
+                    </div>
+                  </div>
+                </div><!--KPP-->
+
+                <div class="search__widget widget__big">
+                  <div class="widget">
+                    <label for="driving_id">Привод</label>
+                    <div class="select-wrap select-wrap_width">
+                      <select class="widget__input select_widget js-select" name="driving" id="driving_id">
+                        <option  value="">- - -</option>
+                        <option value="1">Полный</option>
+                      </select>
+                    </div>
+                  </div>
+                </div><!--KPP-->
+             
               </div>
             </div><!--extra__search-->
 
           </div><!--auto_search-->
-
+          <script>
+            $('.js-select').select2();
+          </script>
         </div><!--filter__block-->
       </div><!--filter-->
 

@@ -1,13 +1,12 @@
 input:focus{
-  border-color: #f35e49;
+  border-color: #f35e49 !important;
 }
 
 select:focus{
-  border-color: #f35e49;
+  border-color: #f35e49 !important;
 }
-
-select:active{
-  border-color: #f35e49;
+select:hover{
+  border-color: #f35e49 !important;
 }
 
 .navig{
@@ -94,6 +93,10 @@ select:active{
   box-shadow: 0px 0px 13px -6px rgba(0,0,0,0.75);
 }
 
+.filter__block{
+  width: 100%;
+}
+
 .categories{
   font-size: 13pt;
   font-weight: 500;
@@ -119,24 +122,25 @@ select:active{
 .auto__search{
   display: flex;
   flex-flow: row wrap;
+  flex-direction: column;
 }
+
 
 .search__wripper{
   display: flex;
+  align-items: baseline;
+  width: 100%;
 }
 
 label {
   vertical-align: top;
 }
 
-.search__widget{
-  margin-bottom: 1em;
-  padding-right: 2rem;
-}
 
 .widget{
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .widget label{
@@ -148,35 +152,83 @@ label {
 .widget__input{
   font-size: 12pt;
   padding: 0.4em 0.6em;
-  border: 1px solid #929292;
+  border: 1px solid #ccc;
   border-radius: 5px;
 }
 
-
 .awesomplete {
   float: left;
+  width: 50%;
+}
+
+.awesomplete .widget__input{
+  width: 80%;
 }
 
 .input__search input{
-  width: 80px;
+  height: 20px;
+}
+.search__widget{
+  padding-right: 0.8rem;
+}
+
+.widget__big{
+  width: 22%;
+}
+
+.widget__small{
+  width: 15%;
 }
 
 .widget-input_right{
   border-left: none;
-  border-radius: 0 5px 5px 0;
+  border-radius: 0 5px 5px 0 !important;
 }
 
 .widget-input_left{
-  border-radius: 5px 0 0 5px;
+  border-radius: 5px 0 0 5px !important;
 }
 
 /*extra__search
 ===================================*/
-
 .extras{
- 
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  width: 100%;
+ }
+
+ .select2-container {
+  display:inline !important;
+ }
+
+ .widget__big .select-wrap .select2-container {
+  width: 100% !important;
 }
 
-#power_id{
-  width: 60px;
+.select-wrap .select2-container--default .select2-selection--single .select2-selection__rendered {
+  padding-top: 3px;
 }
+
+.select-wrap .select2-container--default .select2-selection--single {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  height: 35px;
+}
+
+.select-wrap .select2-container--default .select2-selection--single .select2-selection__arrow b{
+  border-color: #f35e49 transparent transparent transparent;
+  border-width: 10px 5px 0 5px;
+}
+
+.select-wrap_right
+.select2-container--default .select2-selection--single {
+  border-radius: 0 5px 5px 0;
+}
+
+.select-wrap_left
+.select2-container--default .select2-selection--single {
+  border-radius: 5px 0 0 5px;
+}
+
+
