@@ -1,3 +1,15 @@
+input:focus{
+  border-color: #f35e49;
+}
+
+select:focus{
+  border-color: #f35e49;
+}
+
+select:active{
+  border-color: #f35e49;
+}
+
 .navig{
   padding-top: 80px;
   position: sticky;
@@ -10,6 +22,7 @@
 }
 
 .navig__ul{
+  padding-left: 10px;
   font-size: 14pt;
   font-weight: 500;
 }
@@ -105,18 +118,11 @@
 
 .auto__search{
   display: flex;
+  flex-flow: row wrap;
 }
 
 .search__wripper{
   display: flex;
-}
-
-.search__item{
-  
-}
-
-.auto__search{
-
 }
 
 label {
@@ -125,7 +131,7 @@ label {
 
 .search__widget{
   margin-bottom: 1em;
-  padding-right: 0.8rem;
+  padding-right: 2rem;
 }
 
 .widget{
@@ -139,19 +145,38 @@ label {
   font-weight: 400;
 }
 
-.widget__opt{
+.widget__input{
   font-size: 12pt;
   padding: 0.4em 0.6em;
+  border: 1px solid #929292;
+  border-radius: 5px;
 }
 
-.select:active{
-  border: 1px solid #f35e49;
-}
 
 .awesomplete {
   float: left;
 }
 
-.price_input input{
-  width: 100px;
+.input__search input{
+  width: 80px;
+}
+
+.widget-input_right{
+  border-left: none;
+  border-radius: 0 5px 5px 0;
+}
+
+.widget-input_left{
+  border-radius: 5px 0 0 5px;
+}
+
+/*extra__search
+===================================*/
+
+.extras{
+ 
+}
+
+#power_id{
+  width: 60px;
 }
