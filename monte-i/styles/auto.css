@@ -125,7 +125,6 @@ select:hover{
   flex-direction: column;
 }
 
-
 .search__wripper{
   display: flex;
   align-items: baseline;
@@ -135,7 +134,6 @@ select:hover{
 label {
   vertical-align: top;
 }
-
 
 .widget{
   display: flex;

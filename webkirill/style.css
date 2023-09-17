@@ -450,6 +450,14 @@ p {
     color: #999999;
 }
 
+.picture__number{
+    font-size: 15px;
+}
+
+.picture__number a{
+    text-decoration: none;
+    color: #f38181;
+}
 
 
 /* Social
