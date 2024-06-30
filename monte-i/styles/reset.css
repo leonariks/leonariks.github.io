@@ -89,6 +89,7 @@ body{
 .header_inner{
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 .monte{
